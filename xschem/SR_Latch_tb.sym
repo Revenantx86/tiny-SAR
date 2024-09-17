@@ -1,0 +1,144 @@
+v {xschem version=3.4.6RC file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+B 2 85 -1030 885 -630 {flags=graph
+y1=-7.3e-05
+y2=1.9
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.001
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="q
+q_b"
+color="4 4"
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+N 460 -305 475 -305 {
+lab=A}
+N 515 -340 515 -325 {
+lab=VDD}
+N 515 -255 515 -240 {
+lab=GND}
+N 445 -275 475 -275 {
+lab=Q_B}
+N 460 -150 475 -150 {
+lab=Q}
+N 515 -185 515 -170 {
+lab=VDD}
+N 515 -100 515 -85 {
+lab=GND}
+N 445 -120 475 -120 {
+lab=GND}
+N 300 -305 320 -305 {
+lab=A}
+N 390 -305 460 -305 {
+lab=A}
+N 305 -120 325 -120 {
+lab=GND}
+N 395 -120 445 -120 {
+lab=GND}
+N 355 -155 355 -140 {
+lab=VDD}
+N 355 -100 355 -85 {
+lab=GND}
+N 350 -285 350 -270 {
+lab=GND}
+N 350 -340 350 -325 {
+lab=VDD}
+N 445 -275 445 -225 {
+lab=Q_B}
+N 445 -225 570 -225 {
+lab=Q_B}
+N 450 -150 460 -150 {
+lab=Q}
+N 450 -195 450 -150 {
+lab=Q}
+N 450 -195 550 -195 {
+lab=Q}
+N 550 -195 570 -195 {
+lab=Q}
+N 570 -195 610 -225 {
+lab=Q}
+N 610 -290 610 -225 {
+lab=Q}
+N 570 -225 610 -195 {
+lab=Q_B}
+N 610 -195 610 -135 {
+lab=Q_B}
+N 585 -290 650 -290 {
+lab=Q}
+N 585 -135 650 -135 {
+lab=Q_B}
+N 60 -220 60 -190 {
+lab=A}
+N 60 -130 60 -100 {
+lab=GND}
+N -40 -220 -40 -190 {
+lab=VDD}
+N -40 -130 -40 -100 {
+lab=GND}
+C {lab_pin.sym} 300 -305 0 0 {name=p11 sig_type=std_logic lab=A
+}
+C {lab_pin.sym} 650 -290 2 0 {name=p14 sig_type=std_logic lab=Q
+}
+C {lab_pin.sym} 515 -340 0 0 {name=p9 sig_type=std_logic lab=VDD
+}
+C {lab_pin.sym} 515 -240 0 0 {name=p43 sig_type=std_logic lab=GND
+}
+C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/nand.sym} 420 -235 0 0 {name=X1}
+C {lab_pin.sym} 650 -135 2 0 {name=p5 sig_type=std_logic lab=Q_B
+}
+C {lab_pin.sym} 515 -185 0 0 {name=p6 sig_type=std_logic lab=VDD
+}
+C {lab_pin.sym} 515 -85 0 0 {name=p7 sig_type=std_logic lab=GND
+}
+C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/nand.sym} 420 -80 0 0 {name=X2}
+C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/inv.sym} 300 -260 0 0 {name=X3}
+C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/inv.sym} 305 -75 0 0 {name=X4}
+C {lab_pin.sym} 355 -155 0 0 {name=p4 sig_type=std_logic lab=VDD
+}
+C {lab_pin.sym} 355 -85 0 0 {name=p10 sig_type=std_logic lab=GND
+}
+C {lab_pin.sym} 350 -270 0 0 {name=p13 sig_type=std_logic lab=GND
+}
+C {lab_pin.sym} 350 -340 0 0 {name=p17 sig_type=std_logic lab=VDD
+}
+C {lab_pin.sym} 60 -220 2 1 {name=p18 sig_type=std_logic lab=A
+}
+C {lab_pin.sym} 60 -100 0 0 {name=p12 sig_type=std_logic lab=GND
+}
+C {vsource.sym} -40 -160 0 0 {name=V1 value=1.8 savecurrent=false}
+C {lab_pin.sym} -40 -220 0 0 {name=p21 sig_type=std_logic lab=VDD
+}
+C {lab_pin.sym} -40 -100 0 0 {name=p1 sig_type=std_logic lab=GND
+}
+C {lab_pin.sym} 305 -120 0 0 {name=p2 sig_type=std_logic lab=GND
+}
+C {sky130_fd_pr/corner.sym} 65 -410 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {devices/code_shown.sym} 1035 -420 0 0 {name=COMMANDS
+simulator=ngspice
+only_toplevel=false
+value="
+.op
+.tran 1u 1m
+.save all
+"}
+C {launcher.sym} 165 -580 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/SR_Latch_tb.raw tran"
+}
+C {vsource.sym} 60 -160 0 0 {name=V4 value="PULSE(0 1.8 0 0 0 50u 100u)" savecurrent=false}
