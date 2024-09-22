@@ -6,7 +6,7 @@ V {}
 S {}
 E {}
 B 2 45 -1420 845 -1020 {flags=graph
-y1=-0.0095
+y1=-0.015
 y2=2
 ypos1=0
 ypos2=2
@@ -29,7 +29,7 @@ logx=0
 logy=0
 }
 B 2 880 -1420 1680 -1020 {flags=graph
-y1=0
+y1=-0.0028
 y2=2
 ypos1=0
 ypos2=2
@@ -71,15 +71,15 @@ lab=CK_X}
 N 660 -640 690 -640 {
 lab=VOUT}
 N 790 -640 830 -640 {
-lab=VOP}
+lab=Q}
 N 790 -600 830 -600 {
-lab=VON}
+lab=Q_B}
 N 740 -570 740 -540 {
 lab=GND}
 N 830 -600 865 -600 {
-lab=VON}
+lab=Q_B}
 N 830 -640 865 -640 {
-lab=VOP}
+lab=Q}
 N 60 -350 60 -320 {
 lab=VDD}
 N 60 -200 60 -170 {
@@ -108,54 +108,14 @@ N 600 -600 660 -600 {
 lab=VREF}
 N 600 -600 600 -540 {
 lab=VREF}
-N 865 -550 895 -550 {
-lab=VON}
-N 865 -600 865 -550 {
-lab=VON}
-N 865 -690 865 -640 {
-lab=VOP}
-N 865 -690 895 -690 {
-lab=VOP}
-N 1075 -630 1155 -630 {
-lab=GND}
-N 1075 -660 1075 -630 {
-lab=GND}
-N 1155 -630 1255 -630 {
-lab=GND}
-N 1255 -660 1255 -630 {
-lab=GND}
-N 1075 -830 1075 -810 {
-lab=VDD}
-N 1075 -830 1255 -830 {
-lab=VDD}
-N 1255 -830 1255 -810 {
-lab=VDD}
-N 1255 -750 1255 -720 {
-lab=Q_B}
-N 1075 -750 1075 -720 {
-lab=Q}
-N 1115 -780 1145 -780 {
-lab=Q_B}
-N 1180 -735 1255 -735 {
-lab=Q_B}
-N 1075 -735 1145 -735 {
-lab=Q}
-N 1145 -735 1175 -780 {
-lab=Q}
-N 1175 -780 1215 -780 {
-lab=Q}
-N 1145 -780 1180 -735 {
-lab=Q_B}
-N 965 -690 1035 -690 {
-lab=VOP}
-N 965 -550 1340 -550 {
-lab=VON}
-N 1340 -690 1340 -550 {
-lab=VON}
-N 1295 -690 1340 -690 {
-lab=VON}
 N 525 -640 660 -640 {
 lab=VOUT}
+N 750 -700 750 -670 {
+lab=Ib}
+N 202.5 -262.5 202.5 -232.5 {
+lab=Ib}
+N 202.5 -352.5 202.5 -322.5 {
+lab=VDD}
 C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/sample_hold.sym} 435 -640 0 0 {name=X1}
 C {lab_pin.sym} 440 -690 2 0 {name=p2 sig_type=std_logic lab=VDD
 }
@@ -169,14 +129,9 @@ C {lab_pin.sym} 420 -690 0 0 {name=p4 sig_type=std_logic lab=CK
 }
 C {lab_pin.sym} 420 -590 0 0 {name=p5 sig_type=std_logic lab=CK_B
 }
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/comparator.sym} 750 -620 0 0 {name=X2}
 C {lab_pin.sym} 660 -620 0 0 {name=p9 sig_type=std_logic lab=CK_X
 }
 C {lab_pin.sym} 740 -700 0 0 {name=p10 sig_type=std_logic lab=VDD
-}
-C {lab_pin.sym} 830 -640 1 0 {name=p11 sig_type=std_logic lab=VOP
-}
-C {lab_pin.sym} 830 -600 3 0 {name=p12 sig_type=std_logic lab=VON
 }
 C {lab_pin.sym} 740 -540 0 0 {name=p13 sig_type=std_logic lab=GND
 }
@@ -204,7 +159,7 @@ C {lab_pin.sym} 670 -200 0 0 {name=p25 sig_type=std_logic lab=CK_X
 }
 C {lab_pin.sym} 670 -80 0 0 {name=p27 sig_type=std_logic lab=GND
 }
-C {vsource.sym} 670 -140 0 0 {name=V2 value="PULSE(1.8 0 0 1n 1n 250n 500n)" savecurrent=false}
+C {vsource.sym} 670 -140 0 0 {name=V2 value="PULSE(0 1.8 0 1n 1n 750n 1.5u)" savecurrent=false}
 C {vsource.sym} 205 -140 0 0 {name=V6 value=0.5 savecurrent=false}
 C {lab_pin.sym} 205 -200 2 1 {name=p28 sig_type=std_logic lab=VREF
 }
@@ -213,7 +168,7 @@ C {lab_pin.sym} 205 -80 0 0 {name=p29 sig_type=std_logic lab=GND
 C {lab_pin.sym} 600 -540 1 1 {name=p1 sig_type=std_logic lab=VREF
 }
 C {sky130_fd_pr/corner.sym} 535 -975 0 0 {name=CORNER only_toplevel=false corner=tt}
-C {devices/code_shown.sym} 685 -955 0 0 {name=COMMANDS
+C {devices/code_shown.sym} 685 -952.5 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false
 value="
@@ -225,85 +180,12 @@ C {launcher.sym} 110 -980 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/adc_top.raw tran"
 }
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/inv.sym} 875 -645 0 0 {name=X4}
-C {lab_pin.sym} 925 -670 2 0 {name=p31 sig_type=std_logic lab=GND
+C {lab_pin.sym} 865 -640 2 0 {name=p8 sig_type=std_logic lab=Q
 }
-C {lab_pin.sym} 925 -710 2 0 {name=p32 sig_type=std_logic lab=VDD
+C {lab_pin.sym} 865 -600 2 0 {name=p14 sig_type=std_logic lab=Q_B
 }
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/inv.sym} 875 -505 0 0 {name=X5}
-C {lab_pin.sym} 925 -530 2 0 {name=p33 sig_type=std_logic lab=GND
-}
-C {lab_pin.sym} 925 -570 2 0 {name=p34 sig_type=std_logic lab=VDD
-}
-C {lab_pin.sym} 1075 -735 0 0 {name=p8 sig_type=std_logic lab=Q
-}
-C {lab_pin.sym} 1255 -735 2 0 {name=p14 sig_type=std_logic lab=Q_B
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1055 -690 0 0 {name=M2
-W=10
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/nfet_01v8.sym} 1275 -690 0 1 {name=M1
-W=10
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {lab_pin.sym} 1075 -690 2 0 {name=p15 sig_type=std_logic lab=GND
-}
-C {lab_pin.sym} 1255 -690 2 1 {name=p16 sig_type=std_logic lab=GND
-}
-C {lab_pin.sym} 1155 -630 1 0 {name=p17 sig_type=std_logic lab=GND
-}
-C {sky130_fd_pr/pfet_01v8.sym} 1095 -780 0 1 {name=M4
-W=1
-L=0.15
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8.sym} 1235 -780 0 0 {name=M3
-W=1
-L=0.15
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
-C {lab_pin.sym} 1160 -830 1 0 {name=p30 sig_type=std_logic lab=VDD
-}
-C {lab_pin.sym} 1255 -780 2 0 {name=p35 sig_type=std_logic lab=VDD
-}
-C {lab_pin.sym} 1075 -780 0 0 {name=p36 sig_type=std_logic lab=VDD
-}
+C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/comparator/comparator.sym} 740 -620 0 0 {name=X2}
+C {devices/isource.sym} 202.5 -292.5 0 0 {name=I0 value=10u}
+C {devices/lab_wire.sym} 202.5 -232.5 2 0 {name=p37 sig_type=std_logic lab=Ib}
+C {devices/lab_wire.sym} 202.5 -352.5 0 0 {name=p38 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 750 -700 2 0 {name=p39 sig_type=std_logic lab=Ib}
