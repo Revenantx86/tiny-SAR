@@ -18,7 +18,6 @@ module clock_sar
     always @(negedge clk_in) begin
         if (!rst_n) begin
             counter <= 0;
-            clk_out <= 0;
             current_state <= IDLE;
         end 
         else begin
@@ -36,10 +35,10 @@ module clock_sar
 
     always @(*) begin
         if(current_state == IDLE) begin
-            clk_out <= 0;
+            clk_out = 0;
         end
         else begin
-            clk_out =~clk_in;
+            clk_out = ~clk_in;
         end
     end
 

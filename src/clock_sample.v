@@ -13,7 +13,6 @@ module clock_sample
     always @(posedge clk_in) begin
         if (!rst_n) begin
             counter <= 0;
-            clk_out <= 0;
         end 
         else begin
             if (counter == (N-1)) begin
@@ -26,10 +25,10 @@ module clock_sample
 
     always @(*) begin
         if(counter == 0) begin
-            clk_out <= clk_in;
+            clk_out = clk_in;
         end
         else begin
-            clk_out <= 0;
+            clk_out = 0;
         end
     end
 
