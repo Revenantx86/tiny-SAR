@@ -99,7 +99,6 @@ N 260 -270 290 -270 {
 lab=VIN}
 N 410 -270 440 -270 {
 lab=VOUT}
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/sample_hold.sym} 350 -270 0 0 {name=X1}
 C {vsource.sym} 220 -80 0 0 {name=V1 value=1.8 savecurrent=false}
 C {vsource.sym} 40 -80 0 0 {name=V3 value="SIN(0.9 0.9 10k 0 0)" savecurrent=false}
 C {lab_pin.sym} 40 -140 2 1 {name=p18 sig_type=std_logic lab=VIN
@@ -139,3 +138,4 @@ C {launcher.sym} 100 -470 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/sample_hold_tb.raw tran"
 }
+C {xschem/sample/sample_hold.sym} 350 -270 0 0 {name=X1}

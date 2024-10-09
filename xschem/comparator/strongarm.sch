@@ -132,7 +132,7 @@ lab=CK}
 N 960 -540 980 -540 {
 lab=CK}
 C {sky130_fd_pr/nfet_01v8.sym} 510 -100 0 0 {name=M2
-W=2
+W=4
 L=0.15
 nf=1 
 mult=1

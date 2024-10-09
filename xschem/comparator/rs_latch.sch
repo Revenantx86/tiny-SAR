@@ -71,12 +71,10 @@ C {lab_pin.sym} 440 -165 0 0 {name=p10 sig_type=std_logic lab=Q
 }
 C {lab_pin.sym} 620 -165 2 0 {name=p11 sig_type=std_logic lab=Q_B
 }
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/inv.sym} 270 -60 0 0 {name=X3}
 C {lab_pin.sym} 320 -45 2 0 {name=p13 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 320 -165 2 0 {name=p14 sig_type=std_logic lab=VDD
 }
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/inv.sym} 790 -60 0 1 {name=X4}
 C {lab_pin.sym} 740 -45 2 1 {name=p15 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 740 -165 2 1 {name=p16 sig_type=std_logic lab=VDD
@@ -169,3 +167,5 @@ C {devices/iopin.sym} 70 -210 0 1 {name=p27 lab=Q}
 C {lab_pin.sym} 100 -190 2 0 {name=p28 sig_type=std_logic lab=Q_B
 }
 C {devices/iopin.sym} 70 -190 0 1 {name=p29 lab=Q_B}
+C {xschem/digital_lib/inv.sym} 270 -60 0 0 {name=X1}
+C {xschem/digital_lib/inv.sym} 790 -60 0 1 {name=X2}

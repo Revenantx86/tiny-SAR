@@ -6,8 +6,8 @@ V {}
 S {}
 E {}
 B 2 45 -1420 845 -1020 {flags=graph
-y1=-0.015
-y2=2
+y1=-0.011
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -44,6 +44,28 @@ xlabmag=1.0
 ylabmag=1.0
 node=q_b
 color=6
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
+B 2 880 -1840 1680 -1440 {flags=graph
+y1=-0.015
+y2=2
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0
+x2=0.0001
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+node="vout
+ck_x"
+color="6 4"
 dataset=-1
 unitx=1
 logx=0
@@ -86,19 +108,19 @@ N 60 -200 60 -170 {
 lab=VIN}
 N 60 -110 60 -80 {
 lab=GND}
-N 455 -200 455 -170 {
+N 640 -220 640 -190 {
 lab=CK}
-N 455 -110 455 -80 {
+N 640 -130 640 -100 {
 lab=GND}
-N 885 -200 885 -170 {
+N 420 -220 420 -190 {
 lab=CK_B}
-N 885 -110 885 -80 {
+N 420 -130 420 -100 {
 lab=GND}
 N 60 -260 60 -230 {
 lab=GND}
-N 670 -200 670 -170 {
+N 640 -370 640 -340 {
 lab=CK_X}
-N 670 -110 670 -80 {
+N 640 -280 640 -250 {
 lab=GND}
 N 205 -200 205 -170 {
 lab=VREF}
@@ -116,7 +138,6 @@ N 202.5 -262.5 202.5 -232.5 {
 lab=Ib}
 N 202.5 -352.5 202.5 -322.5 {
 lab=VDD}
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/sample_hold.sym} 435 -640 0 0 {name=X1}
 C {lab_pin.sym} 440 -690 2 0 {name=p2 sig_type=std_logic lab=VDD
 }
 C {lab_pin.sym} 440 -590 2 0 {name=p3 sig_type=std_logic lab=GND
@@ -139,27 +160,27 @@ C {vsource.sym} 60 -290 0 0 {name=V1 value=1.8 savecurrent=false}
 C {vsource.sym} 60 -140 0 0 {name=V3 value="SIN(0.9 0.9 10k 0 0)" savecurrent=false}
 C {lab_pin.sym} 60 -200 2 1 {name=p18 sig_type=std_logic lab=VIN
 }
-C {vsource.sym} 455 -140 0 0 {name=V4 value="PULSE(0 1.8 0 1n 1n 2.5u 5u)" savecurrent=false}
-C {lab_pin.sym} 455 -200 0 0 {name=p20 sig_type=std_logic lab=CK
+C {vsource.sym} 640 -160 0 0 {name=V4 value="PULSE(0 1.8 0 1n 1n 2.5u 5u)" savecurrent=false}
+C {lab_pin.sym} 640 -220 0 0 {name=p20 sig_type=std_logic lab=CK
 }
 C {lab_pin.sym} 60 -350 0 0 {name=p21 sig_type=std_logic lab=VDD
 }
 C {lab_pin.sym} 60 -80 0 0 {name=p19 sig_type=std_logic lab=GND
 }
-C {vsource.sym} 885 -140 0 0 {name=V5 value="PULSE(1.8 0 0 1n 1n 2.5u 5u)" savecurrent=false}
-C {lab_pin.sym} 885 -200 0 0 {name=p22 sig_type=std_logic lab=CK_B
+C {vsource.sym} 420 -160 0 0 {name=V5 value="PULSE(1.8 0 0 1n 1n 2.5u 5u)" savecurrent=false}
+C {lab_pin.sym} 420 -220 0 0 {name=p22 sig_type=std_logic lab=CK_B
 }
-C {lab_pin.sym} 455 -80 0 0 {name=p23 sig_type=std_logic lab=GND
+C {lab_pin.sym} 640 -100 0 0 {name=p23 sig_type=std_logic lab=GND
 }
-C {lab_pin.sym} 885 -80 0 0 {name=p24 sig_type=std_logic lab=GND
+C {lab_pin.sym} 420 -100 0 0 {name=p24 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 60 -230 0 0 {name=p26 sig_type=std_logic lab=GND
 }
-C {lab_pin.sym} 670 -200 0 0 {name=p25 sig_type=std_logic lab=CK_X
+C {lab_pin.sym} 640 -370 0 0 {name=p25 sig_type=std_logic lab=CK_X
 }
-C {lab_pin.sym} 670 -80 0 0 {name=p27 sig_type=std_logic lab=GND
+C {lab_pin.sym} 640 -250 0 0 {name=p27 sig_type=std_logic lab=GND
 }
-C {vsource.sym} 670 -140 0 0 {name=V2 value="PULSE(0 1.8 0 1n 1n 750n 1.5u)" savecurrent=false}
+C {vsource.sym} 640 -310 0 0 {name=V2 value="PULSE(0 1.8 0 1n 1n 750n 1.5u)" savecurrent=false}
 C {vsource.sym} 205 -140 0 0 {name=V6 value=0.5 savecurrent=false}
 C {lab_pin.sym} 205 -200 2 1 {name=p28 sig_type=std_logic lab=VREF
 }
@@ -184,8 +205,9 @@ C {lab_pin.sym} 865 -640 2 0 {name=p8 sig_type=std_logic lab=Q
 }
 C {lab_pin.sym} 865 -600 2 0 {name=p14 sig_type=std_logic lab=Q_B
 }
-C {/home/unixpoly/vlsi/analog/tiny-SAR/xschem/comparator/comparator.sym} 740 -620 0 0 {name=X2}
-C {devices/isource.sym} 202.5 -292.5 0 0 {name=I0 value=10u}
+C {devices/isource.sym} 202.5 -292.5 0 0 {name=I0 value=15u}
 C {devices/lab_wire.sym} 202.5 -232.5 2 0 {name=p37 sig_type=std_logic lab=Ib}
 C {devices/lab_wire.sym} 202.5 -352.5 0 0 {name=p38 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 750 -700 2 0 {name=p39 sig_type=std_logic lab=Ib}
+C {xschem/comparator/comparator.sym} 740 -620 0 0 {name=X2}
+C {xschem/sample/sample_hold.sym} 435 -640 0 0 {name=X1}
