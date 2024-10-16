@@ -9,32 +9,32 @@ N 380 -670 410 -670 {lab=clk}
 N 380 -710 380 -670 {lab=clk}
 N 380 -710 670 -710 {lab=clk}
 N 380 -650 410 -650 {lab=vss}
-N 370 -610 410 -610 {lab=set_n}
-N 370 -610 370 -570 {lab=set_n}
-N 650 -630 700 -630 {lab=set_n}
-N 370 -570 650 -570 {lab=set_n}
-N 650 -630 650 -570 {lab=set_n}
+N 370 -610 410 -610 {lab=#net1}
+N 370 -610 370 -570 {lab=#net1}
+N 650 -630 700 -630 {lab=#net1}
+N 370 -570 650 -570 {lab=#net1}
+N 650 -630 650 -570 {lab=#net1}
 N 670 -670 700 -670 {lab=clk}
 N 670 -710 670 -670 {lab=clk}
 N 650 -650 700 -650 {lab=df7}
 N 650 -670 650 -650 {lab=df7}
 N 590 -670 650 -670 {lab=df7}
-N 2100 -630 2150 -630 {lab=set_n}
-N 2100 -630 2100 -570 {lab=set_n}
+N 2100 -630 2150 -630 {lab=#net1}
+N 2100 -630 2100 -570 {lab=#net1}
 N 2120 -670 2150 -670 {lab=clk}
 N 2120 -710 2120 -670 {lab=clk}
 N 2100 -650 2150 -650 {lab=df2}
 N 2100 -670 2100 -650 {lab=df2}
 N 880 -670 940 -670 {lab=df6}
-N 2390 -630 2440 -630 {lab=set_n}
-N 2390 -630 2390 -570 {lab=set_n}
+N 2390 -630 2440 -630 {lab=#net1}
+N 2390 -630 2390 -570 {lab=#net1}
 N 2410 -670 2440 -670 {lab=clk}
 N 2410 -710 2410 -670 {lab=clk}
 N 2390 -650 2440 -650 {lab=df1}
 N 2390 -670 2390 -650 {lab=df1}
 N 2330 -670 2390 -670 {lab=df1}
-N 2680 -630 2730 -630 {lab=set_n}
-N 2680 -630 2680 -570 {lab=set_n}
+N 2680 -630 2730 -630 {lab=#net1}
+N 2680 -630 2680 -570 {lab=#net1}
 N 2700 -670 2730 -670 {lab=clk}
 N 2700 -710 2700 -670 {lab=clk}
 N 2680 -650 2730 -650 {lab=df0}
@@ -43,9 +43,9 @@ N 2620 -670 2680 -670 {lab=df0}
 N 670 -710 960 -710 {lab=clk}
 N 2120 -710 2410 -710 {lab=clk}
 N 2410 -710 2700 -710 {lab=clk}
-N 650 -570 940 -570 {lab=set_n}
-N 2100 -570 2390 -570 {lab=set_n}
-N 2390 -570 2680 -570 {lab=set_n}
+N 650 -570 940 -570 {lab=#net1}
+N 2100 -570 2390 -570 {lab=#net1}
+N 2390 -570 2680 -570 {lab=#net1}
 N 590 -650 610 -650 {lab=df7_b}
 N 610 -650 610 -550 {lab=df7_b}
 N 880 -650 900 -650 {lab=df6_b}
@@ -57,55 +57,55 @@ N 2640 -650 2640 -550 {lab=df0_b}
 N 2910 -650 2930 -650 {lab=df00_b}
 N 2930 -650 2930 -550 {lab=df00_b}
 N 2910 -670 2930 -670 {lab=df00}
-N 940 -630 990 -630 {lab=set_n}
-N 940 -630 940 -570 {lab=set_n}
+N 940 -630 990 -630 {lab=#net1}
+N 940 -630 940 -570 {lab=#net1}
 N 960 -670 990 -670 {lab=clk}
 N 960 -710 960 -670 {lab=clk}
 N 940 -650 990 -650 {lab=df6}
 N 940 -670 940 -650 {lab=df6}
 N 1170 -670 1230 -670 {lab=df5}
 N 960 -710 1250 -710 {lab=clk}
-N 940 -570 1230 -570 {lab=set_n}
+N 940 -570 1230 -570 {lab=#net1}
 N 1170 -650 1190 -650 {lab=df5_b}
 N 1190 -650 1190 -550 {lab=df5_b}
-N 1230 -630 1280 -630 {lab=set_n}
-N 1230 -630 1230 -570 {lab=set_n}
+N 1230 -630 1280 -630 {lab=#net1}
+N 1230 -630 1230 -570 {lab=#net1}
 N 1250 -670 1280 -670 {lab=clk}
 N 1250 -710 1250 -670 {lab=clk}
 N 1230 -650 1280 -650 {lab=df5}
 N 1230 -670 1230 -650 {lab=df5}
 N 1460 -670 1520 -670 {lab=df4}
 N 1250 -710 1540 -710 {lab=clk}
-N 1230 -570 1520 -570 {lab=set_n}
+N 1230 -570 1520 -570 {lab=#net1}
 N 1460 -650 1480 -650 {lab=df4_b}
 N 1480 -650 1480 -550 {lab=df4_b}
-N 1520 -630 1570 -630 {lab=set_n}
-N 1520 -630 1520 -570 {lab=set_n}
+N 1520 -630 1570 -630 {lab=#net1}
+N 1520 -630 1520 -570 {lab=#net1}
 N 1540 -670 1570 -670 {lab=clk}
 N 1540 -710 1540 -670 {lab=clk}
 N 1520 -650 1570 -650 {lab=df4}
 N 1520 -670 1520 -650 {lab=df4}
 N 1750 -670 1810 -670 {lab=df3}
 N 1540 -710 1830 -710 {lab=clk}
-N 1520 -570 1810 -570 {lab=set_n}
+N 1520 -570 1810 -570 {lab=#net1}
 N 1750 -650 1770 -650 {lab=df3_b}
 N 1770 -650 1770 -550 {lab=df3_b}
-N 1810 -630 1860 -630 {lab=set_n}
-N 1810 -630 1810 -570 {lab=set_n}
+N 1810 -630 1860 -630 {lab=#net1}
+N 1810 -630 1810 -570 {lab=#net1}
 N 1830 -670 1860 -670 {lab=clk}
 N 1830 -710 1830 -670 {lab=clk}
 N 1810 -650 1860 -650 {lab=df3}
 N 1810 -670 1810 -650 {lab=df3}
 N 2040 -670 2100 -670 {lab=df2}
 N 1830 -710 2120 -710 {lab=clk}
-N 1810 -570 2100 -570 {lab=set_n}
+N 1810 -570 2100 -570 {lab=#net1}
 N 2040 -650 2060 -650 {lab=df2_b}
 N 2060 -650 2060 -550 {lab=df2_b}
 N 2710 -390 2730 -390 {lab=df00_b}
-N 2910 -450 2930 -450 {lab=#net1}
-N 2930 -480 2930 -450 {lab=#net1}
-N 2420 -450 2440 -450 {lab=#net1}
-N 2420 -480 2420 -450 {lab=#net1}
+N 2910 -450 2930 -450 {lab=#net2}
+N 2930 -480 2930 -450 {lab=#net2}
+N 2420 -450 2440 -450 {lab=#net2}
+N 2420 -480 2420 -450 {lab=#net2}
 N 2420 -390 2440 -390 {lab=df0_b}
 N 2620 -450 2640 -450 {lab=b0}
 N 2640 -500 2640 -450 {lab=b0}
@@ -132,7 +132,6 @@ N 1480 -320 1770 -320 {lab=comp_in}
 N 2070 -430 2070 -320 {lab=comp_in}
 N 1770 -320 2060 -320 {lab=comp_in}
 N 2370 -430 2370 -320 {lab=comp_in}
-N 2660 -430 2660 -320 {lab=comp_in}
 N 2060 -320 2360 -320 {lab=comp_in}
 N 1250 -450 1270 -450 {lab=b3}
 N 1250 -480 1250 -450 {lab=b3}
@@ -172,7 +171,7 @@ N 620 -430 690 -430 {lab=comp_in}
 N 600 -450 600 -220 {lab=b7}
 N 350 -410 400 -410 {lab=reset_n}
 N 330 -430 400 -430 {lab=comp_in}
-N 310 -610 370 -610 {lab=set_n}
+N 310 -610 370 -610 {lab=#net1}
 N 310 -710 380 -710 {lab=clk}
 N 930 -410 980 -410 {lab=reset_n}
 N 910 -430 980 -430 {lab=comp_in}
@@ -195,9 +194,7 @@ N 2370 -430 2440 -430 {lab=comp_in}
 N 2680 -410 2730 -410 {lab=reset_n}
 N 2640 -450 2640 -220 {lab=b0}
 N 2360 -320 2370 -320 {lab=comp_in}
-N 2370 -320 2660 -320 {lab=comp_in}
-N 2420 -480 2930 -480 {lab=#net1}
-N 2660 -430 2730 -430 {lab=comp_in}
+N 2420 -480 2930 -480 {lab=#net2}
 N 660 -1080 720 -1080 {lab=b7}
 N 660 -1050 720 -1050 {lab=b6}
 N 660 -1020 720 -1020 {lab=b5}
@@ -228,8 +225,6 @@ C {lab_pin.sym} 900 -550 0 0 {name=p56 sig_type=std_logic lab=df6_b}
 C {lab_pin.sym} 2350 -550 0 0 {name=p57 sig_type=std_logic lab=df1_b}
 C {lab_pin.sym} 2640 -550 0 0 {name=p58 sig_type=std_logic lab=df0_b}
 C {lab_pin.sym} 2930 -550 0 0 {name=p59 sig_type=std_logic lab=df00_b}
-C {lab_pin.sym} 310 -610 0 0 {name=p60 sig_type=std_logic lab=set_n
-}
 C {lab_pin.sym} 610 -670 1 0 {name=p61 sig_type=std_logic lab=df7}
 C {lab_pin.sym} 900 -670 1 0 {name=p62 sig_type=std_logic lab=df6}
 C {lab_pin.sym} 2350 -670 1 0 {name=p64 sig_type=std_logic lab=df1}
@@ -270,8 +265,6 @@ C {lab_pin.sym} 2050 -220 2 0 {name=p90 sig_type=std_logic lab=b2}
 C {lab_pin.sym} 1760 -220 2 0 {name=p91 sig_type=std_logic lab=b3}
 C {lab_pin.sym} 2340 -220 2 0 {name=p92 sig_type=std_logic lab=b1}
 C {lab_pin.sym} 2640 -220 2 0 {name=p93 sig_type=std_logic lab=b0}
-C {lab_pin.sym} 2730 -450 0 0 {name=p94 sig_type=std_logic lab=vdd
-}
 C {lab_pin.sym} 310 -320 0 0 {name=p95 sig_type=std_logic lab=comp_in
 }
 C {lab_pin.sym} 960 -390 3 0 {name=p96 sig_type=std_logic lab=df5_b}
@@ -341,4 +334,10 @@ C {sky130_stdcells/dfbbp_1.sym} 2230 -420 0 0 {name=x16 VGND=vss VNB=vss VPB=vdd
 C {sky130_stdcells/dfbbp_1.sym} 2530 -420 0 0 {name=x17 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/dfbbp_1.sym} 2820 -420 0 0 {name=x18 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {lab_pin.sym} 410 -630 0 0 {name=p34 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 2730 -450 0 0 {name=p35 sig_type=std_logic lab=vss
+}
+C {lab_pin.sym} 2730 -430 0 0 {name=p36 sig_type=std_logic lab=vss
+}
+C {lab_pin.sym} 310 -610 0 0 {name=p37 sig_type=std_logic lab=reset_n
 }
