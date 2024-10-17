@@ -7,7 +7,7 @@ S {}
 E {}
 B 2 60 -1160 860 -760 {flags=graph
 y1=0
-y2=2
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -48,8 +48,8 @@ logx=0
 logy=0
 }
 B 2 890 -2020 1690 -1620 {flags=graph
-y1=0.8
-y2=2.8
+y1=-0.019
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -92,8 +92,8 @@ color="5 8"
 node="clk_sar
 clk_sample"}
 B 2 60 -1590 860 -1190 {flags=graph
-y1=0.7408
-y2=2.6728
+y1=0
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -116,8 +116,8 @@ color="8 6"
 node="q0
 clk"}
 B 2 60 -2020 860 -1620 {flags=graph
-y1=0.356
-y2=2.286
+y1=0
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -150,9 +150,11 @@ N 550 -120 550 -90 {
 lab=0}
 N 550 -610 550 -590 {lab=vdd}
 N 550 -450 550 -430 {lab=vss}
-N 480 -550 500 -550 {lab=clk}
-N 600 -550 620 -550 {lab=clk_sar}
-N 600 -490 620 -490 {lab=clk_sample}
+N 460 -540 480 -540 {lab=clk}
+N 620 -490 660 -490 {lab=clk_sample}
+N 620 -510 660 -510 {lab=clk_sample_b}
+N 620 -530 660 -530 {lab=clk_sar_b}
+N 620 -550 660 -550 {lab=clk_sar}
 C {devices/code_shown.sym} 45 -452.5 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=true
@@ -185,14 +187,18 @@ tclcommand="xschem raw_read $netlist_dir/clockgen_tb.raw tran"
 }
 C {vsource.sym} 550 -150 0 0 {name=V6 value=1.8 savecurrent=false}
 C {devices/lab_pin.sym} 550 -90 0 0 {name=p32 lab=0}
-C {xschem/clockgen/clockgen.sym} 460 -430 0 0 {name=X2}
-C {lab_pin.sym} 480 -550 0 0 {name=p1 sig_type=std_logic lab=clk
+C {xschem/clockgen/clockgen.sym} 440 -430 0 0 {name=X2}
+C {lab_pin.sym} 460 -540 0 0 {name=p1 sig_type=std_logic lab=clk
 }
 C {lab_pin.sym} 550 -430 0 0 {name=p2 sig_type=std_logic lab=vss
 }
 C {lab_pin.sym} 550 -610 0 0 {name=p3 sig_type=std_logic lab=vdd
 }
-C {lab_pin.sym} 620 -490 0 1 {name=p5 sig_type=std_logic lab=clk_sample
+C {lab_pin.sym} 660 -550 0 1 {name=p4 sig_type=std_logic lab=clk_sar
 }
-C {lab_pin.sym} 620 -550 2 0 {name=p6 sig_type=std_logic lab=clk_sar
+C {lab_pin.sym} 660 -530 0 1 {name=p5 sig_type=std_logic lab=clk_sar_b
+}
+C {lab_pin.sym} 660 -510 0 1 {name=p6 sig_type=std_logic lab=clk_sample_b
+}
+C {lab_pin.sym} 660 -490 0 1 {name=p7 sig_type=std_logic lab=clk_sample
 }

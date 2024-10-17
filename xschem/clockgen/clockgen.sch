@@ -20,7 +20,7 @@ T {counter} 100 -530 0 0 0.4 0.4 {}
 T {Reset Circuit} 1680 -270 0 0 0.4 0.4 {}
 T {Clock Output Circuit} 1050 -920 0 0 0.4 0.4 {}
 N 210 -890 260 -890 {lab=clk}
-N 210 -850 260 -850 {lab=0}
+N 210 -850 260 -850 {lab=vss}
 N 250 -630 280 -630 {lab=d3}
 N 250 -670 280 -670 {lab=#net1}
 N 250 -750 280 -750 {lab=#net2}
@@ -118,7 +118,7 @@ C {lab_pin.sym} 580 -870 2 0 {name=p12 sig_type=std_logic lab=clk_sar
 }
 C {lab_pin.sym} 210 -890 0 0 {name=p14 sig_type=std_logic lab=clk
 }
-C {devices/lab_pin.sym} 210 -850 0 0 {name=p16 lab=0}
+C {devices/lab_pin.sym} 210 -850 0 0 {name=p16 lab=vss}
 C {lab_pin.sym} 580 -690 2 0 {name=p20 sig_type=std_logic lab=clk_sample
 }
 C {sky130_stdcells/and4_2.sym} 340 -690 0 0 {name=x8 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }

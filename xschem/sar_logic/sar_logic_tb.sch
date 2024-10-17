@@ -221,3 +221,5 @@ C {lab_pin.sym} 390 -820 2 0 {name=p26 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 370 -820 2 1 {name=p28 sig_type=std_logic lab=vdd
 }
+C {lab_pin.sym} 410 -800 2 0 {name=p11 sig_type=std_logic lab=vdd
+}

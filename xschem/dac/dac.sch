@@ -83,6 +83,7 @@ N 120 -250 180 -250 {lab=vdd}
 N 120 -220 180 -220 {lab=vss}
 N 120 -190 180 -190 {lab=vref}
 N 120 -290 180 -290 {lab=vdac}
+N 120 -580 180 -580 {lab=reset}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1150 -420 0 0 {name=C2 model=cap_mim_m3_1 W=1 L=1 MF=8 spiceprefix=X}
 C {lab_pin.sym} 310 -530 0 0 {name=p19 sig_type=std_logic lab=vdac}
 C {xschem/dac/dac_sw.sym} 1060 -130 0 0 {name=X2}
@@ -176,3 +177,5 @@ C {lab_pin.sym} 120 -190 0 0 {name=p65 sig_type=std_logic lab=vref
 }
 C {opin.sym} 180 -290 0 0 {name=p4 lab=vdac}
 C {lab_pin.sym} 120 -290 2 1 {name=p10 sig_type=std_logic lab=vdac}
+C {lab_pin.sym} 120 -580 2 1 {name=p70 sig_type=std_logic lab=reset}
+C {ipin.sym} 180 -580 0 1 {name=p73 lab=reset}
