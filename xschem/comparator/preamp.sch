@@ -47,26 +47,10 @@ N 405 -450 435 -450 {
 lab=CK}
 N 285 -280 325 -280 {
 lab=VP}
-N 155 -130 175 -130 {
-lab=GND}
-N 175 -100 175 -60 {
-lab=GND}
-N 235 -170 235 -130 {
-lab=Ib}
-N 235 -180 235 -170 {
-lab=Ib}
-N 175 -180 235 -180 {
-lab=Ib}
-N 175 -180 175 -160 {
-lab=Ib}
-N 175 -220 175 -180 {
-lab=Ib}
 N 305 -550 345 -550 {
 lab=VDD}
 N 605 -280 645 -280 {
 lab=VN}
-N 145 -60 175 -60 {
-lab=GND}
 N 365 -180 465 -180 {
 lab=#net1}
 N 435 -450 525 -450 {
@@ -81,10 +65,6 @@ N 365 -420 365 -310 {
 lab=VON}
 N 565 -420 565 -310 {
 lab=VOP}
-N 175 -60 465 -60 {
-lab=GND}
-N 215 -130 425 -130 {
-lab=Ib}
 N 145 -530 175 -530 {
 lab=VDD}
 N 145 -510 175 -510 {
@@ -103,6 +83,7 @@ N 145 -350 175 -350 {
 lab=Ib}
 N 470 -485 470 -450 {
 lab=CK}
+N 365 -130 425 -130 {lab=CK}
 C {sky130_fd_pr/nfet_01v8.sym} 345 -280 0 0 {name=M5
 L=0.5
 W=3
@@ -149,12 +130,6 @@ W=4
 mult=1 nf=1
 model=nfet_01v8
 spiceprefix=X}
-C {sky130_fd_pr/nfet_01v8.sym} 195 -130 0 1 {name=M10
-L=1
-W=4
-mult=1 nf=1
-model=nfet_01v8
-spiceprefix=X}
 C {lab_pin.sym} 470 -485 1 0 {name=p35 sig_type=std_logic lab=CK
 }
 C {lab_pin.sym} 285 -280 2 1 {name=p28 sig_type=std_logic lab=VP
@@ -163,17 +138,12 @@ C {lab_pin.sym} 645 -280 2 0 {name=p29 sig_type=std_logic lab=VN
 }
 C {lab_pin.sym} 305 -550 0 0 {name=p25 sig_type=std_logic lab=VDD
 }
-C {lab_pin.sym} 145 -60 0 0 {name=p26 sig_type=std_logic lab=GND
-}
-C {lab_pin.sym} 155 -130 0 0 {name=p30 sig_type=std_logic lab=GND
-}
 C {lab_pin.sym} 545 -280 0 0 {name=p31 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 385 -280 2 0 {name=p32 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 485 -130 2 0 {name=p33 sig_type=std_logic lab=GND
 }
-C {devices/lab_wire.sym} 175 -220 2 0 {name=p38 sig_type=std_logic lab=Ib}
 C {lab_pin.sym} 395 -370 2 0 {name=p1 sig_type=std_logic lab=VON
 }
 C {lab_pin.sym} 535 -370 0 0 {name=p2 sig_type=std_logic lab=VOP
@@ -201,4 +171,8 @@ C {devices/iopin.sym} 145 -390 0 1 {name=p16 lab=VP}
 C {devices/iopin.sym} 145 -370 0 1 {name=p17 lab=VN}
 C {devices/iopin.sym} 145 -350 0 1 {name=p18 lab=Ib}
 C {lab_pin.sym} 175 -350 2 0 {name=p10 sig_type=std_logic lab=Ib
+}
+C {lab_pin.sym} 465 -60 2 0 {name=p19 sig_type=std_logic lab=GND
+}
+C {lab_pin.sym} 365 -130 0 0 {name=p20 sig_type=std_logic lab=CK
 }

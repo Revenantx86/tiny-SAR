@@ -199,5 +199,5 @@ C {sky130_stdcells/inv_1.sym} 490 -820 0 0 {name=x2 VGND=vss VNB=vss VPB=vdd VPW
 C {sky130_stdcells/inv_1.sym} 500 -650 0 0 {name=x3 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {lab_pin.sym} 580 -820 2 0 {name=p38 sig_type=std_logic lab=clk_sar_b
 }
-C {lab_pin.sym} 580 -650 2 0 {name=p39 sig_type=std_logic lab=clk_sample_b
+C {lab_pin.sym} 580 -650 2 0 {name=p40 sig_type=std_logic lab=clk_sample_b
 }

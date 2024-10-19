@@ -80,7 +80,7 @@ C {lab_pin.sym} 740 -45 2 1 {name=p15 sig_type=std_logic lab=GND
 C {lab_pin.sym} 740 -165 2 1 {name=p16 sig_type=std_logic lab=VDD
 }
 C {sky130_fd_pr/nfet_01v8.sym} 420 -105 0 0 {name=M2
-W=10
+W=5
 L=0.15
 nf=1 
 mult=1
@@ -94,7 +94,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 640 -105 0 1 {name=M1
-W=10
+W=5
 L=0.15
 nf=1 
 mult=1

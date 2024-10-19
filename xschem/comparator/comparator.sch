@@ -73,10 +73,6 @@ C {lab_pin.sym} 325 -310 2 1 {name=p3 sig_type=std_logic lab=VDD
 }
 C {lab_pin.sym} 100 -380 0 1 {name=p4 sig_type=std_logic lab=VDD
 }
-C {lab_pin.sym} 255 -235 2 1 {name=p5 sig_type=std_logic lab=clk_b
-}
-C {lab_pin.sym} 425 -235 2 1 {name=p7 sig_type=std_logic lab=clk
-}
 C {lab_pin.sym} 650 -310 0 1 {name=p9 sig_type=std_logic lab=VDD
 }
 C {lab_pin.sym} 100 -310 0 1 {name=p10 sig_type=std_logic lab=clk
@@ -112,5 +108,7 @@ C {xschem/comparator/preamp.sym} 327.5 -240 0 0 {name=X4}
 C {xschem/comparator/rs_latch.sym} 590 -170 0 0 {name=X5}
 C {xschem/comparator/strongarm.sym} 495 -235 0 0 {name=X6}
 C {ipin.sym} 60 -280 0 0 {name=p28 lab=clk_b}
-C {lab_pin.sym} 100 -280 0 1 {name=p29 sig_type=std_logic lab=clk_b
+C {lab_pin.sym} 255 -235 2 1 {name=p29 sig_type=std_logic lab=clk_b
+}
+C {lab_pin.sym} 425 -235 2 1 {name=p5 sig_type=std_logic lab=clk
 }

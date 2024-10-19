@@ -230,43 +230,11 @@ lab=vdd}
 N 1590 -710 1620 -710 {
 lab=clk_sar}
 N 1490 -780 1490 -750 {lab=vsample}
-N 1220 -300 1220 -280 {lab=vdd}
-N 1220 -140 1220 -120 {lab=vss}
-N 1130 -230 1150 -230 {lab=clk}
-N 1290 -240 1310 -240 {lab=clk_sar}
-N 1290 -180 1310 -180 {lab=clk_sample}
-N 1290 -200 1310 -200 {lab=clk_sample_b}
-N 1290 -220 1310 -220 {lab=clk_sar_b}
 N 240 -200 240 -170 {
 lab=vref}
 N 240 -110 240 -80 {
 lab=vss}
-N 1670 -350 1670 -330 {lab=vss}
-N 1670 -570 1670 -550 {lab=vdd}
-N 1730 -520 1760 -520 {lab=clk}
-N 1730 -450 1760 -450 {lab=clk_sample_b}
-N 1730 -390 1760 -390 {lab=vdd}
-N 1540 -570 1540 -520 {lab=b0}
-N 1560 -570 1560 -500 {lab=b1}
-N 1580 -570 1580 -480 {lab=b2}
-N 1600 -570 1600 -460 {lab=b3}
-N 1540 -380 1540 -330 {lab=b7}
-N 1560 -400 1560 -330 {lab=b6}
-N 1580 -420 1580 -330 {lab=b5}
-N 1600 -440 1600 -330 {lab=b4}
-N 1530 -520 1610 -520 {lab=b0}
-N 1530 -500 1610 -500 {lab=b1}
-N 1530 -480 1610 -480 {lab=b2}
-N 1530 -460 1610 -460 {lab=b3}
-N 1530 -440 1610 -440 {lab=b4}
-N 1530 -420 1610 -420 {lab=b5}
-N 1530 -400 1610 -400 {lab=b6}
-N 1530 -380 1610 -380 {lab=b7}
-N 1450 -350 1450 -330 {lab=vss}
-N 1460 -570 1460 -550 {lab=vdd}
-N 1440 -570 1440 -550 {lab=vdd}
-N 1330 -450 1360 -450 {lab=vdac}
-N 1510 -690 1620 -690 {lab=vss}
+N 1510 -690 1620 -690 {lab=vdac}
 N 1370 -750 1620 -750 {lab=vsample}
 N 460 -370 460 -340 {
 lab=vss}
@@ -276,12 +244,51 @@ N 340 -210 340 -180 {
 lab=reset_n}
 N 340 -120 340 -90 {
 lab=vss}
-N 1310 -200 1420 -200 {lab=clk_sample_b}
 N 630 -340 630 -310 {
 lab=reset_n}
 N 630 -250 630 -220 {
 lab=vss}
-N 1480 -570 1480 -550 {lab=vdd}
+N 1800 -620 1800 -600 {lab=vdd}
+N 1800 -460 1800 -440 {lab=vss}
+N 1870 -550 1890 -550 {lab=clk}
+N 1690 -500 1730 -500 {lab=clk_sample}
+N 1690 -520 1730 -520 {lab=clk_sample_b}
+N 1690 -540 1730 -540 {lab=clk_sar_b}
+N 1690 -560 1730 -560 {lab=clk_sar}
+N 1500 -240 1500 -220 {lab=vss}
+N 1500 -460 1500 -440 {lab=vdd}
+N 1560 -410 1590 -410 {lab=clk}
+N 1560 -340 1590 -340 {lab=#net1}
+N 1560 -280 1590 -280 {lab=Q}
+N 1370 -460 1370 -410 {lab=b0}
+N 1390 -460 1390 -390 {lab=b1}
+N 1410 -460 1410 -370 {lab=b2}
+N 1430 -460 1430 -350 {lab=b3}
+N 1370 -270 1370 -220 {lab=b7}
+N 1390 -290 1390 -220 {lab=b6}
+N 1410 -310 1410 -220 {lab=b5}
+N 1430 -330 1430 -220 {lab=b4}
+N 1360 -410 1440 -410 {lab=b0}
+N 1360 -390 1440 -390 {lab=b1}
+N 1360 -370 1440 -370 {lab=b2}
+N 1360 -350 1440 -350 {lab=b3}
+N 1360 -330 1440 -330 {lab=b4}
+N 1360 -310 1440 -310 {lab=b5}
+N 1360 -290 1440 -290 {lab=b6}
+N 1360 -270 1440 -270 {lab=b7}
+N 1280 -240 1280 -220 {lab=vss}
+N 1290 -460 1290 -440 {lab=vdd}
+N 1270 -460 1270 -440 {lab=vdd}
+N 1160 -340 1190 -340 {lab=vdac}
+N 1310 -460 1310 -440 {lab=vdd}
+N 1590 -340 1640 -340 {lab=#net1}
+N 1720 -320 1760 -320 {lab=clk_sample_b}
+N 1720 -280 1750 -280 {lab=reset}
+N 1720 -360 1760 -360 {lab=vss}
+N 480 -200 480 -170 {
+lab=reset}
+N 480 -110 480 -80 {
+lab=vss}
 C {lab_pin.sym} 1220 -750 2 1 {name=p6 sig_type=std_logic lab=VIN
 }
 C {lab_pin.sym} 1490 -780 3 1 {name=p7 sig_type=std_logic lab=vsample
@@ -306,7 +313,7 @@ simulator=ngspice
 only_toplevel=false
 value="
 .op
-.tran 10n 15u
+.tran 100n 15u
 .save all
 "}
 C {launcher.sym} 110 -980 0 0 {name=h5
@@ -322,17 +329,6 @@ C {devices/lab_wire.sym} 140 -260 2 0 {name=p37 sig_type=std_logic lab=Ib}
 C {devices/lab_wire.sym} 1680 -800 2 0 {name=p39 sig_type=std_logic lab=Ib}
 C {xschem/comparator/comparator.sym} 1670 -720 0 0 {name=X2}
 C {xschem/sample/sample_hold.sym} 1310 -750 0 0 {name=X1}
-C {xschem/clockgen/clockgen.sym} 1110 -120 0 0 {name=X3}
-C {lab_pin.sym} 1130 -230 0 0 {name=p16 sig_type=std_logic lab=clk
-}
-C {lab_pin.sym} 1310 -180 0 1 {name=p31 sig_type=std_logic lab=clk_sample
-}
-C {lab_pin.sym} 1310 -240 2 0 {name=p32 sig_type=std_logic lab=clk_sar
-}
-C {lab_pin.sym} 1760 -450 0 1 {name=p33 sig_type=std_logic lab=clk_sample_b
-}
-C {lab_pin.sym} 1310 -220 2 0 {name=p34 sig_type=std_logic lab=clk_sar_b
-}
 C {lab_pin.sym} 1295 -800 3 1 {name=p4 sig_type=std_logic lab=clk_sample_b
 }
 C {lab_pin.sym} 1295 -700 1 1 {name=p5 sig_type=std_logic lab=clk_sample
@@ -359,55 +355,15 @@ C {lab_pin.sym} 1315 -700 0 1 {name=p3 sig_type=std_logic lab=vss
 }
 C {lab_pin.sym} 1670 -640 0 1 {name=p13 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 1220 -120 0 1 {name=p17 sig_type=std_logic lab=vss
-}
-C {lab_pin.sym} 1220 -300 2 0 {name=p30 sig_type=std_logic lab=vdd
-}
 C {vsource.sym} 240 -140 0 0 {name=V5 value=0.6 savecurrent=false}
 C {lab_pin.sym} 240 -200 2 1 {name=p29 sig_type=std_logic lab=vref
 }
 C {lab_pin.sym} 240 -80 0 0 {name=p38 sig_type=std_logic lab=vss
 }
-C {xschem/sar_logic/sarlogic.sym} 1920 -260 0 1 {name=X4}
-C {lab_pin.sym} 1670 -330 0 1 {name=p24 sig_type=std_logic lab=vss
-}
-C {lab_pin.sym} 1670 -570 2 0 {name=p1 sig_type=std_logic lab=vdd
-}
-C {lab_pin.sym} 1760 -520 0 1 {name=p27 sig_type=std_logic lab=clk
-}
-C {lab_pin.sym} 1760 -390 2 0 {name=p15 sig_type=std_logic lab=vdd
-}
-C {lab_pin.sym} 1540 -570 1 0 {name=p22 sig_type=std_logic lab=b0
-}
-C {lab_pin.sym} 1560 -570 1 0 {name=p25 sig_type=std_logic lab=b1
-}
-C {lab_pin.sym} 1580 -570 1 0 {name=p28 sig_type=std_logic lab=b2
-}
-C {lab_pin.sym} 1600 -570 1 0 {name=p36 sig_type=std_logic lab=b3
-}
-C {lab_pin.sym} 1600 -330 3 0 {name=p41 sig_type=std_logic lab=b4
-}
-C {lab_pin.sym} 1580 -330 3 0 {name=p42 sig_type=std_logic lab=b5
-}
-C {lab_pin.sym} 1560 -330 3 0 {name=p44 sig_type=std_logic lab=b6
-}
-C {lab_pin.sym} 1540 -330 3 0 {name=p45 sig_type=std_logic lab=b7
-}
-C {xschem/dac/dac.sym} 1570 -330 0 1 {}
-C {lab_pin.sym} 1330 -450 2 1 {name=p46 sig_type=std_logic lab=vdac
-}
-C {lab_pin.sym} 1450 -330 0 1 {name=p47 sig_type=std_logic lab=vss
-}
-C {lab_pin.sym} 1460 -570 1 0 {name=p48 sig_type=std_logic lab=vdd
-}
-C {lab_pin.sym} 1440 -570 3 1 {name=p49 sig_type=std_logic lab=vdd
-}
 C {vsource.sym} 460 -310 0 0 {name=V2 value=0 savecurrent=false}
 C {lab_pin.sym} 460 -370 0 0 {name=p43 sig_type=std_logic lab=vss
 }
 C {gnd.sym} 460 -250 0 0 {name=l1 lab=GND}
-C {lab_pin.sym} 1510 -690 0 0 {name=p19 sig_type=std_logic lab=vss
-}
 C {vsource.sym} 340 -150 0 0 {name=V8 value="PWL(0s 0V 500ns 0V 510ns 1.8V 4u 1.8V 4.01u 0V)" savecurrent=false}
 C {devices/lab_pin.sym} 340 -90 0 0 {name=p40 lab=vss}
 C {lab_pin.sym} 340 -210 0 0 {name=p50 sig_type=std_logic lab=reset_n
@@ -416,7 +372,68 @@ C {vsource.sym} 630 -280 0 0 {name=V6 value="PWL(0s 0V 500ns 0V 510ns 1.8V 4u 1.
 C {devices/lab_pin.sym} 630 -220 0 0 {name=p51 lab=vss}
 C {lab_pin.sym} 630 -340 0 0 {name=p52 sig_type=std_logic lab=reset_n
 }
-C {lab_pin.sym} 1480 -570 1 0 {name=p53 sig_type=std_logic lab=vdd
+C {xschem/clockgen/clockgen.sym} 1910 -440 0 1 {name=X3}
+C {lab_pin.sym} 1890 -550 0 1 {name=p1 sig_type=std_logic lab=clk
 }
-C {lab_pin.sym} 1420 -200 0 1 {name=p54 sig_type=std_logic lab=clk_sample_b
+C {lab_pin.sym} 1800 -440 0 1 {name=p15 sig_type=std_logic lab=vss
+}
+C {lab_pin.sym} 1800 -620 0 1 {name=p16 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 1690 -560 0 0 {name=p17 sig_type=std_logic lab=clk_sar
+}
+C {lab_pin.sym} 1690 -540 0 0 {name=p22 sig_type=std_logic lab=clk_sar_b
+}
+C {lab_pin.sym} 1690 -520 0 0 {name=p24 sig_type=std_logic lab=clk_sample_b
+}
+C {lab_pin.sym} 1690 -500 0 0 {name=p25 sig_type=std_logic lab=clk_sample
+}
+C {xschem/sar_logic/sarlogic.sym} 1750 -150 0 1 {name=X4}
+C {lab_pin.sym} 1500 -220 1 1 {name=p27 sig_type=std_logic lab=vss
+}
+C {lab_pin.sym} 1500 -460 1 0 {name=p28 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 1590 -410 0 1 {name=p30 sig_type=std_logic lab=clk
+}
+C {lab_pin.sym} 1370 -460 1 0 {name=p32 sig_type=std_logic lab=b0
+}
+C {lab_pin.sym} 1390 -460 1 0 {name=p33 sig_type=std_logic lab=b1
+}
+C {lab_pin.sym} 1410 -460 1 0 {name=p34 sig_type=std_logic lab=b2
+}
+C {lab_pin.sym} 1430 -460 1 0 {name=p36 sig_type=std_logic lab=b3
+}
+C {lab_pin.sym} 1430 -220 3 0 {name=p41 sig_type=std_logic lab=b4
+}
+C {lab_pin.sym} 1410 -220 3 0 {name=p42 sig_type=std_logic lab=b5
+}
+C {lab_pin.sym} 1390 -220 3 0 {name=p44 sig_type=std_logic lab=b6
+}
+C {lab_pin.sym} 1370 -220 3 0 {name=p45 sig_type=std_logic lab=b7
+}
+C {lab_pin.sym} 1760 -320 2 0 {name=p46 sig_type=std_logic lab=clk_sample_b
+}
+C {xschem/dac/dac.sym} 1400 -220 0 1 {}
+C {lab_pin.sym} 1160 -340 2 1 {name=p47 sig_type=std_logic lab=vdac
+}
+C {lab_pin.sym} 1280 -220 1 1 {name=p48 sig_type=std_logic lab=vss
+}
+C {lab_pin.sym} 1290 -460 1 0 {name=p49 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 1270 -460 1 0 {name=p53 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 1310 -460 1 0 {name=p54 sig_type=std_logic lab=vdd
+}
+C {sky130_stdcells/mux2_1.sym} 1680 -340 0 1 {name=x5 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {lab_pin.sym} 1750 -280 0 1 {name=p55 sig_type=std_logic lab=reset
+}
+C {lab_pin.sym} 1760 -360 0 1 {name=p56 sig_type=std_logic lab=vss
+}
+C {lab_pin.sym} 1510 -690 2 1 {name=p19 sig_type=std_logic lab=vdac
+}
+C {lab_pin.sym} 1585 -280 2 0 {name=p57 sig_type=std_logic lab=Q
+}
+C {lab_pin.sym} 480 -200 0 0 {name=p31 sig_type=std_logic lab=reset
+}
+C {vsource.sym} 480 -140 0 0 {name=V7 value="PWL(0s 0V 1us 0V 1.1us 1.8V)" savecurrent=false}
+C {lab_pin.sym} 480 -80 0 0 {name=p58 sig_type=std_logic lab=vss
 }
