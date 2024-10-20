@@ -319,11 +319,6 @@ C {lab_pin.sym} 950 -420 0 1 {name=p10 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 70 -460 1 0 {name=p2 sig_type=std_logic lab=VDD
 }
-C {capa-2.sym} 250 -315 2 0 {name=C1
-m=1
-value=0.5p
-footprint=1206
-device=polarized_capacitor}
 C {capa-2.sym} 820 -120 0 0 {name=C2
 m=1
 value=1.5p
@@ -333,3 +328,4 @@ C {lab_pin.sym} 250 -390 2 1 {name=p26 sig_type=std_logic lab=p
 }
 C {lab_pin.sym} 710 -360 2 1 {name=p27 sig_type=std_logic lab=x
 }
+C {sky130_fd_pr/cap_mim_m3_1.sym} 250 -315 0 0 {name=C9 model=cap_mim_m3_1 W=15 L=15 MF=1 spiceprefix=X}
