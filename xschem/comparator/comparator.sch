@@ -45,10 +45,6 @@ N 690 -255 730 -255 {
 lab=Q}
 N 690 -215 730 -215 {
 lab=Q_B}
-N 340 -300 340 -285 {
-lab=Ib}
-N 60 -185 100 -185 {
-lab=Ib}
 N 375 -255 445 -255 {
 lab=#net1}
 N 375 -215 445 -215 {
@@ -99,16 +95,13 @@ C {lab_pin.sym} 730 -255 0 1 {name=p22 sig_type=std_logic lab=Q
 }
 C {lab_pin.sym} 730 -215 0 1 {name=p23 sig_type=std_logic lab=Q_B
 }
-C {lab_pin.sym} 340 -300 0 1 {name=p24 sig_type=std_logic lab=Ib
-}
-C {lab_pin.sym} 100 -185 0 1 {name=p26 sig_type=std_logic lab=Ib
-}
-C {ipin.sym} 60 -185 0 0 {name=p27 lab=Ib}
 C {xschem/comparator/preamp.sym} 327.5 -240 0 0 {name=X4}
 C {xschem/comparator/rs_latch.sym} 590 -170 0 0 {name=X5}
 C {xschem/comparator/strongarm.sym} 495 -235 0 0 {name=X6}
 C {ipin.sym} 60 -280 0 0 {name=p28 lab=clk_b}
-C {lab_pin.sym} 255 -235 2 1 {name=p29 sig_type=std_logic lab=clk_b
-}
 C {lab_pin.sym} 425 -235 2 1 {name=p5 sig_type=std_logic lab=clk
+}
+C {lab_pin.sym} 100 -280 0 1 {name=p7 sig_type=std_logic lab=clk_b
+}
+C {lab_pin.sym} 255 -235 2 1 {name=p24 sig_type=std_logic lab=clk_b
 }

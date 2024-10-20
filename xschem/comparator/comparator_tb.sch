@@ -51,8 +51,8 @@ color="12 4"
 node="vn
 vp"}
 B 2 860 -860 1660 -460 {flags=graph
-y1=-0.00098
-y2=2
+y1=-0.00069
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -102,15 +102,15 @@ N 610 -270 610 -240 {
 lab=clk_b}
 N 610 -180 610 -150 {
 lab=GND}
-N 375 -540 375 -520 {lab=VDD}
-N 385 -540 385 -520 {lab=Ib}
-N 300 -500 325 -500 {lab=VP}
-N 300 -480 325 -480 {lab=clk_b}
-N 300 -460 325 -460 {lab=clk}
-N 300 -440 325 -440 {lab=VN}
-N 425 -490 460 -490 {lab=q}
-N 425 -450 460 -450 {lab=q_b}
-N 375 -420 375 -395 {lab=GND}
+N 445 -570 445 -550 {lab=VDD}
+N 455 -570 455 -550 {lab=Ib}
+N 370 -530 395 -530 {lab=VP}
+N 370 -510 395 -510 {lab=clk_b}
+N 370 -490 395 -490 {lab=clk}
+N 370 -470 395 -470 {lab=VN}
+N 495 -520 530 -520 {lab=q}
+N 495 -480 530 -480 {lab=q_b}
+N 445 -450 445 -425 {lab=GND}
 N 125 -375 125 -345 {
 lab=VP}
 N 125 -285 125 -255 {
@@ -148,27 +148,27 @@ C {devices/lab_wire.sym} 30 -340 3 0 {name=p37 sig_type=std_logic lab=VDD}
 C {vsource.sym} 610 -210 0 0 {name=V5 value="PULSE(1.8 0 0 0 0 250n 500n)" savecurrent=false}
 C {lab_pin.sym} 610 -270 0 0 {name=p5 sig_type=std_logic lab=clk_b
 value="PULSE(1.8 0 0 0 0 250n 500n)"}
-C {xschem/comparator/comparator.sym} 375 -470 0 0 {name=X1}
-C {lab_pin.sym} 375 -395 0 0 {name=p1 sig_type=std_logic lab=GND
+C {xschem/comparator/comparator.sym} 445 -500 0 0 {name=X1}
+C {lab_pin.sym} 445 -425 0 0 {name=p1 sig_type=std_logic lab=GND
 }
-C {lab_pin.sym} 375 -540 2 1 {name=p2 sig_type=std_logic lab=VDD
+C {lab_pin.sym} 445 -570 2 1 {name=p2 sig_type=std_logic lab=VDD
 }
-C {devices/lab_wire.sym} 385 -540 0 1 {name=p3 sig_type=std_logic lab=Ib}
-C {lab_pin.sym} 300 -500 2 1 {name=p4 sig_type=std_logic lab=VP
+C {devices/lab_wire.sym} 455 -570 0 1 {name=p3 sig_type=std_logic lab=Ib}
+C {lab_pin.sym} 370 -530 2 1 {name=p4 sig_type=std_logic lab=VP
 }
-C {lab_pin.sym} 300 -440 0 0 {name=p6 sig_type=std_logic lab=VN
+C {lab_pin.sym} 370 -470 0 0 {name=p6 sig_type=std_logic lab=VN
 }
 C {lab_pin.sym} 350 -150 0 0 {name=p7 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 610 -150 0 0 {name=p8 sig_type=std_logic lab=GND
 }
-C {lab_pin.sym} 300 -460 0 0 {name=p9 sig_type=std_logic lab=clk
+C {lab_pin.sym} 370 -490 0 0 {name=p9 sig_type=std_logic lab=clk
 }
-C {lab_pin.sym} 300 -480 0 0 {name=p10 sig_type=std_logic lab=clk_b
+C {lab_pin.sym} 370 -510 0 0 {name=p10 sig_type=std_logic lab=clk_b
 value="PULSE(1.8 0 0 0 0 250n 500n)"}
-C {lab_pin.sym} 460 -490 2 0 {name=p11 sig_type=std_logic lab=q
+C {lab_pin.sym} 530 -520 2 0 {name=p11 sig_type=std_logic lab=q
 }
-C {lab_pin.sym} 460 -450 2 0 {name=p13 sig_type=std_logic lab=q_b
+C {lab_pin.sym} 530 -480 2 0 {name=p13 sig_type=std_logic lab=q_b
 }
 C {lab_pin.sym} 100 -80 0 0 {name=p14 sig_type=std_logic lab=GND
 }

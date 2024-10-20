@@ -79,11 +79,14 @@ N 145 -390 175 -390 {
 lab=VP}
 N 145 -370 175 -370 {
 lab=VN}
-N 145 -350 175 -350 {
-lab=Ib}
 N 470 -485 470 -450 {
 lab=CK}
 N 365 -130 425 -130 {lab=CK}
+N 560 -450 565 -450 {lab=VDD}
+N 365 -450 370 -450 {lab=VDD}
+N 360 -280 365 -280 {lab=GND}
+N 565 -280 570 -280 {lab=GND}
+N 460 -130 465 -130 {lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 345 -280 0 0 {name=M5
 L=0.5
 W=3
@@ -169,9 +172,6 @@ C {devices/iopin.sym} 145 -440 0 1 {name=p14 lab=VON}
 C {devices/iopin.sym} 145 -420 0 1 {name=p15 lab=VOP}
 C {devices/iopin.sym} 145 -390 0 1 {name=p16 lab=VP}
 C {devices/iopin.sym} 145 -370 0 1 {name=p17 lab=VN}
-C {devices/iopin.sym} 145 -350 0 1 {name=p18 lab=Ib}
-C {lab_pin.sym} 175 -350 2 0 {name=p10 sig_type=std_logic lab=Ib
-}
 C {lab_pin.sym} 465 -60 2 0 {name=p19 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 365 -130 0 0 {name=p20 sig_type=std_logic lab=CK
