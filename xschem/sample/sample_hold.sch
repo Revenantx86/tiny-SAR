@@ -170,7 +170,7 @@ C {lab_pin.sym} 160 -220 1 1 {name=p16 sig_type=std_logic lab=GND
 C {lab_pin.sym} 90 -220 2 1 {name=p1 sig_type=std_logic lab=GND
 }
 C {sky130_fd_pr/pfet_01v8.sym} 570 -400 3 0 {name=M3
-W=1
+W=5
 L=0.15
 nf=1
 mult=1
@@ -184,7 +184,7 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 390 -350 0 0 {name=M5
-W=1
+W=2
 L=0.15
 nf=1
 mult=1
@@ -230,7 +230,7 @@ C {lab_pin.sym} 600 -220 1 1 {name=p3 sig_type=std_logic lab=GND
 C {lab_pin.sym} 410 -270 0 1 {name=p4 sig_type=std_logic lab=GND
 }
 C {sky130_fd_pr/nfet_01v8.sym} 540 -270 0 1 {name=M8
-W=1
+W=5
 L=0.15
 nf=1 
 mult=1
@@ -321,7 +321,7 @@ C {lab_pin.sym} 70 -460 1 0 {name=p2 sig_type=std_logic lab=VDD
 }
 C {capa-2.sym} 820 -120 0 0 {name=C2
 m=1
-value=1.5p
+value=2p
 footprint=1206
 device=polarized_capacitor}
 C {lab_pin.sym} 250 -390 2 1 {name=p26 sig_type=std_logic lab=p
