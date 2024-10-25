@@ -239,18 +239,18 @@ N 1020 -840 1380 -840 {lab=#net14}
 N 1240 -720 1260 -720 {lab=#net14}
 N 1240 -840 1240 -720 {lab=#net14}
 N 1460 -840 1500 -840 {lab=#net15}
-N 1945 -1100 1945 -1080 {
+N 1915 -1400 1915 -1380 {
 lab=vss}
-N 1925 -1100 1925 -1080 {
+N 1895 -1400 1895 -1380 {
 lab=clk_sample}
-N 1925 -1180 1925 -1160 {
+N 1895 -1480 1895 -1460 {
 lab=clk_sample_b}
-N 1945 -1180 1945 -1160 {
+N 1915 -1480 1915 -1460 {
 lab=vdd}
-N 1850 -1130 1880 -1130 {
+N 1820 -1430 1850 -1430 {
 lab=VIN}
-N 2000 -1130 2040 -1130 {lab=vsample}
-N 2040 -1160 2040 -1130 {lab=vsample}
+N 1970 -1430 2010 -1430 {lab=vsample}
+N 2010 -1460 2010 -1430 {lab=vsample}
 N 340 -360 340 -330 {
 lab=VIN}
 N 340 -270 340 -240 {
@@ -355,17 +355,17 @@ C {sky130_stdcells/inv_1.sym} 1420 -840 0 0 {name=x1 VGND=vss VNB=vss VPB=vdd VP
 C {sky130_stdcells/inv_1.sym} 1540 -840 0 0 {name=x2 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_1.sym} 1420 -720 0 0 {name=x3 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_1.sym} 1540 -720 0 0 {name=x4 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
-C {lab_pin.sym} 1850 -1130 2 1 {name=p6 sig_type=std_logic lab=VIN
+C {lab_pin.sym} 1820 -1430 2 1 {name=p6 sig_type=std_logic lab=VIN
 }
-C {xschem/sample/sample_hold.sym} 1940 -1130 0 0 {name=X5}
-C {lab_pin.sym} 1925 -1080 1 1 {name=p5 sig_type=std_logic lab=clk_sample}
-C {lab_pin.sym} 1945 -1180 2 0 {name=p2 sig_type=std_logic lab=vdd
+C {xschem/sample/sample_hold.sym} 1910 -1430 0 0 {name=X5}
+C {lab_pin.sym} 1895 -1380 1 1 {name=p5 sig_type=std_logic lab=clk_sample}
+C {lab_pin.sym} 1915 -1480 2 0 {name=p2 sig_type=std_logic lab=vdd
 }
-C {lab_pin.sym} 1945 -1080 0 1 {name=p3 sig_type=std_logic lab=vss
+C {lab_pin.sym} 1915 -1380 0 1 {name=p3 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 1925 -1180 3 1 {name=p4 sig_type=std_logic lab=clk_sample_b
+C {lab_pin.sym} 1895 -1480 3 1 {name=p4 sig_type=std_logic lab=clk_sample_b
 }
-C {lab_pin.sym} 2040 -1160 3 1 {name=p7 sig_type=std_logic lab=vsample
+C {lab_pin.sym} 2010 -1460 3 1 {name=p7 sig_type=std_logic lab=vsample
 }
 C {vsource.sym} 340 -300 0 0 {name=V3 value="SIN(0.9 0.9 10k 0 0)" savecurrent=false}
 C {lab_pin.sym} 340 -360 2 1 {name=p18 sig_type=std_logic lab=VIN
