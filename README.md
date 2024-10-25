@@ -1,0 +1,1 @@
+8 Bit 2MSPS SAR ADC
