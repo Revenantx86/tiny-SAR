@@ -33,7 +33,7 @@ logy=0
 color=7
 node=clk}
 B 2 45 -1837.5 845 -1437.5 {flags=graph
-y1=-0.14
+y1=-0.056
 y2=1.9
 ypos1=0
 ypos2=2
@@ -53,12 +53,12 @@ unitx=1
 logx=0
 logy=0
 
-color="4 7"
-node="clk_sar
-clk_sample"}
+color="4 9"
+node="clk_sample
+clk_sample_B"}
 B 2 45 -2277.5 845 -1877.5 {flags=graph
-y1=-0.2
-y2=1.4
+y1=-0.48
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -86,8 +86,8 @@ node="vsample
 vin
 vdac"}
 B 2 875 -2277.5 1675 -1877.5 {flags=graph
-y1=-0.22
-y2=1.7
+y1=-0.48
+y2=1.8
 ypos1=0
 ypos2=2
 divy=5
@@ -111,8 +111,8 @@ logy=0
 color=7
 node=vdac}
 B 2 45 -2707.5 845 -2307.5 {flags=graph
-y1=-0.14
-y2=1.9
+y1=-0.038
+y2=2.1
 ypos1=0
 ypos2=2
 divy=5
@@ -131,13 +131,12 @@ unitx=1
 logx=0
 logy=0
 
-color="4 7 6"
-node="b7
-b0
-clk_sample"}
+color="4 6"
+node="clk_sar
+q_b"}
 B 2 875 -1837.5 1675 -1437.5 {flags=graph
-y1=0
-y2=1.8
+y1=2.88
+y2=4.68
 ypos1=0
 ypos2=2
 divy=5
@@ -157,8 +156,9 @@ logx=0
 logy=0
 
 
-color=7
-node=reset_n}
+
+color=6
+node=clk_sar}
 B 2 875 -1417.5 1675 -1017.5 {flags=graph
 y1=-0.071
 y2=2
@@ -181,10 +181,11 @@ logx=0
 logy=0
 
 
-color="6 4 6"
+color="6 7 12 9"
 node="clk_sample_b
-b7
-b0"}
+clk_sample
+clk_sar
+clk_sar_b"}
 T {DUT} 695 -930 0 0 0.4 0.4 {}
 N 945 -720 945 -700 {
 lab=vss}
@@ -238,7 +239,7 @@ N 1180 -295 1180 -275 {lab=vss}
 N 1180 -515 1180 -495 {lab=vdd}
 N 1090 -465 1120 -465 {lab=clk}
 N 1090 -395 1120 -395 {lab=clk_sample_b}
-N 1090 -335 1120 -335 {lab=Q_B}
+N 1090 -335 1120 -335 {lab=Q}
 N 1310 -515 1310 -465 {lab=b0}
 N 1290 -515 1290 -445 {lab=b1}
 N 1270 -515 1270 -425 {lab=b2}
@@ -291,7 +292,7 @@ C {devices/code_shown.sym} 60 -730 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false
 value="
-.param w=4 l=4
+.param w=2 l=2
 .op
 .tran 10n 120u
 .save all
@@ -368,7 +369,7 @@ C {lab_pin.sym} 1410 -515 3 1 {name=p39 sig_type=std_logic lab=vdd
 }
 C {lab_pin.sym} 1090 -465 0 0 {name=p41 sig_type=std_logic lab=clk
 }
-C {lab_pin.sym} 1090 -335 0 0 {name=p42 sig_type=std_logic lab=Q_B
+C {lab_pin.sym} 1090 -335 0 0 {name=p42 sig_type=std_logic lab=Q
 }
 C {lab_pin.sym} 1370 -515 3 1 {name=p44 sig_type=std_logic lab=clk_sample_b
 }

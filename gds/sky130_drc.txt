@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <report-database>
  <description>SKY130 DRC runset</description>
- <original-file>/home/unixpoly/vlsi/projects/tiny-SAR/gds/sample_hold_pcell.gds</original-file>
+ <original-file>/home/unixpoly/vlsi/projects/tiny-SAR/gds/comparator_pcell.gds</original-file>
  <generator>drc: script='/home/unixpoly/.klayout/salt/Efabless_sky130/tech/sky130/macros/run_drc_full.lydrc'</generator>
  <top-cell>TOP</top-cell>
  <tags>
@@ -1552,7 +1552,78 @@
    <references>
    </references>
   </cell>
+  <cell>
+   <name>pfet$2</name>
+   <variant/>
+   <layout-name>pfet$2</layout-name>
+   <references>
+    <ref>
+     <parent>TOP</parent>
+     <trans>r180 *1 12.705,6.995</trans>
+    </ref>
+   </references>
+  </cell>
  </cells>
  <items>
+  <item>
+   <tags/>
+   <category>'nwell.2a'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (9.39,4.145;9.39,6.245)|(8.49,6.235;8.49,4.135)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'nwell.2a'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (11.65,3.775;11.65,7.141)|(10.75,6.245;10.75,4.145)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'nwell.2a'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (20.005,4.135;20.005,6.235)|(19.105,6.245;19.105,4.145)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'nwell.2a'</category>
+   <cell>TOP</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (17.745,4.145;17.745,6.245)|(16.845,7.141;16.845,3.775)</value>
+   </values>
+  </item>
+  <item>
+   <tags/>
+   <category>'nwell.2a'</category>
+   <cell>pfet$2</cell>
+   <visited>false</visited>
+   <multiplicity>1</multiplicity>
+   <comment/>
+   <image/>
+   <values>
+    <value>edge-pair: (1.955,0.75;1.955,2.85)|(1.055,3.22;1.055,-0.146)</value>
+   </values>
+  </item>
  </items>
 </report-database>

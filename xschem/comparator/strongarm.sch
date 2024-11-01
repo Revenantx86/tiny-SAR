@@ -132,9 +132,9 @@ lab=CK}
 N 960 -540 980 -540 {
 lab=CK}
 C {sky130_fd_pr/nfet_01v8.sym} 510 -100 0 0 {name=M2
-W=4
+W=2
 L=0.15
-nf=1 
+nf=2
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -194,9 +194,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 460 -360 0 1 {name=M9
-W=10
+W=2.5
 L=0.15
-nf=1 
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"

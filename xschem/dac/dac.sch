@@ -91,14 +91,11 @@ N 1705 -535 1705 -460 {lab=#net16}
 N 1705 -535 1765 -535 {lab=#net16}
 N 1885 -535 1885 -460 {lab=#net17}
 N 1885 -535 1945 -535 {lab=#net17}
-N 1005 -840 1005 -805 {lab=vdac}
 N 990 -870 1005 -870 {lab=vss}
 N 1005 -920 1005 -900 {lab=vss}
-N 1720 -840 1720 -805 {lab=#net1}
-N 1705 -870 1720 -870 {lab=vss}
-N 1720 -920 1720 -900 {lab=vss}
-N 1275 -805 1340 -805 {lab=vdac}
+N 1005 -840 1005 -805 {lab=vdac}
 N 1400 -805 1455 -805 {lab=#net1}
+N 1275 -805 1340 -805 {lab=vdac}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1455 -695 0 0 {name=C2 model=cap_mim_m3_1 W=w L=l MF=8 spiceprefix=X}
 C {lab_pin.sym} 615 -805 0 0 {name=p19 sig_type=std_logic lab=vdac}
 C {xschem/dac/dac_sw.sym} 1365 -405 0 0 {name=X2}
@@ -122,22 +119,18 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1815 -695 0 0 {name=C3 model=cap_mim_m3_1 W=w 
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1995 -695 0 0 {name=C4 model=cap_mim_m3_1 W=w L=l MF=1 spiceprefix=X}
 C {lab_pin.sym} 2185 -805 3 0 {name=p53 sig_type=std_logic lab=vss}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2085 -805 1 0 {name=C5 model=cap_mim_m3_1 W=w L=l MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1275 -695 0 0 {name=C6 model=cap_mim_m3_1 W=w L=l MF=1 spiceprefix=X}
 C {xschem/dac/dac_sw.sym} 1185 -405 0 0 {name=X1}
 C {lab_pin.sym} 1195 -575 0 0 {name=p44 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1285 -465 1 1 {name=p54 sig_type=std_logic lab=vref
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1095 -695 0 0 {name=C7 model=cap_mim_m3_1 W=w L=l MF=2 spiceprefix=X}
 C {xschem/dac/dac_sw.sym} 1005 -405 0 0 {name=X6}
 C {lab_pin.sym} 1015 -575 0 0 {name=p55 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1105 -465 1 1 {name=p60 sig_type=std_logic lab=vref
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 915 -695 0 0 {name=C8 model=cap_mim_m3_1 W=w L=l MF=4 spiceprefix=X}
 C {xschem/dac/dac_sw.sym} 825 -405 0 0 {name=X7}
 C {lab_pin.sym} 835 -575 0 0 {name=p61 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 925 -465 1 1 {name=p66 sig_type=std_logic lab=vref
 }
-C {sky130_fd_pr/cap_mim_m3_1.sym} 735 -695 0 0 {name=C9 model=cap_mim_m3_1 W=w L=l MF=8 spiceprefix=X}
 C {xschem/dac/dac_sw.sym} 645 -405 0 0 {name=X8}
 C {lab_pin.sym} 655 -575 0 0 {name=p67 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 655 -555 0 0 {name=p68 sig_type=std_logic lab=vss}
@@ -219,7 +212,7 @@ C {sky130_stdcells/mux2_1.sym} 1885 -420 3 0 {name=x16 VGND=vss VNB=vss VPB=vdd 
 C {lab_pin.sym} 1865 -380 3 0 {name=p83 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1945 -380 1 1 {name=p84 sig_type=std_logic lab=reset}
 C {sky130_fd_pr/nfet_01v8.sym} 1025 -870 2 0 {name=M1
-W=1
+W=5
 L=0.15
 nf=1 
 mult=1
@@ -236,22 +229,8 @@ C {lab_pin.sym} 1125 -870 0 1 {name=p85 sig_type=std_logic lab=reset}
 C {sky130_stdcells/inv_1.sym} 1085 -870 2 0 {name=x17 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {lab_pin.sym} 990 -870 0 0 {name=p86 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 1005 -920 0 0 {name=p87 sig_type=std_logic lab=vss}
-C {sky130_fd_pr/nfet_01v8.sym} 1740 -870 2 0 {name=M2
-W=1
-L=0.15
-nf=1 
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=nfet_01v8
-spiceprefix=X
-}
-C {lab_pin.sym} 1840 -870 0 1 {name=p88 sig_type=std_logic lab=reset}
-C {sky130_stdcells/inv_1.sym} 1800 -870 2 0 {name=x18 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
-C {lab_pin.sym} 1705 -870 0 0 {name=p89 sig_type=std_logic lab=vss}
-C {lab_pin.sym} 1720 -920 0 0 {name=p90 sig_type=std_logic lab=vss}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1370 -805 1 0 {name=C10 model=cap_mim_m3_1 W=w L=l MF=8/7 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 735 -695 0 0 {name=C6 model=cap_mim_m3_1 W=w L=l MF=8 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 915 -695 0 0 {name=C7 model=cap_mim_m3_1 W=w L=l MF=4 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1095 -695 0 0 {name=C8 model=cap_mim_m3_1 W=w L=l MF=2 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1275 -695 0 0 {name=C9 model=cap_mim_m3_1 W=w L=l MF=1 spiceprefix=X}

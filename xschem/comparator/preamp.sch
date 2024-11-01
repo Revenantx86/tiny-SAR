@@ -88,14 +88,14 @@ N 360 -280 365 -280 {lab=GND}
 N 565 -280 570 -280 {lab=GND}
 N 460 -130 465 -130 {lab=GND}
 C {sky130_fd_pr/nfet_01v8.sym} 345 -280 0 0 {name=M5
-L=0.5
-W=3
-mult=1 nf=1
+L=1.5
+W=2.5
+mult=1 nf=2
 model=nfet_01v8
 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 385 -450 0 1 {name=M6
-W=4.5
-L=1
+W=4
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -108,8 +108,8 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 545 -450 0 0 {name=M7
-W=4.5
-L=1
+W=4
+L=0.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -122,13 +122,13 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 585 -280 0 1 {name=M8
-L=0.5
-W=3
-mult=1 nf=1
+L=1.5
+W=2.5
+mult=1 nf=2
 model=nfet_01v8
 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 445 -130 0 0 {name=M9
-L=1
+L=2
 W=4
 mult=1 nf=1
 model=nfet_01v8
