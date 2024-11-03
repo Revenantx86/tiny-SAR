@@ -114,7 +114,7 @@ node="clk_sar
 clk_sample
 logic_enable"}
 B 2 60 -1990 860 -1590 {flags=graph
-y1=-0.15
+y1=-0.34
 y2=1.8
 ypos1=0
 ypos2=2

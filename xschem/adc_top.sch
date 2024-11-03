@@ -10,8 +10,8 @@ L 4 680 -60 1570 -60 {}
 L 4 1590 -940 1590 -80 {}
 L 4 680 -960 1570 -960 {}
 B 2 45 -1420 845 -1020 {flags=graph
-y1=0
-y2=1.8
+y1=-0.36
+y2=1.44
 ypos1=0
 ypos2=2
 divy=5
@@ -57,8 +57,8 @@ color="4 9"
 node="clk_sample
 clk_sample_B"}
 B 2 45 -2277.5 845 -1877.5 {flags=graph
-y1=-0.48
-y2=1.8
+y1=-0.23
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -135,8 +135,8 @@ color="4 6"
 node="clk_sar
 q_b"}
 B 2 875 -1837.5 1675 -1437.5 {flags=graph
-y1=2.88
-y2=4.68
+y1=-1.7e-07
+y2=1.9
 ypos1=0
 ypos2=2
 divy=5
@@ -157,8 +157,11 @@ logy=0
 
 
 
-color=6
-node=clk_sar}
+
+color="4 6 5"
+node="vsample
+vdac
+Q"}
 B 2 875 -1417.5 1675 -1017.5 {flags=graph
 y1=-0.071
 y2=2
@@ -235,32 +238,29 @@ lab=reset_n}
 N 240 -290 240 -260 {
 lab=vss}
 N 1300 -800 1300 -770 {lab=vdd}
-N 1180 -295 1180 -275 {lab=vss}
-N 1180 -515 1180 -495 {lab=vdd}
-N 1090 -465 1120 -465 {lab=clk}
-N 1090 -395 1120 -395 {lab=clk_sample_b}
-N 1090 -335 1120 -335 {lab=Q}
-N 1310 -515 1310 -465 {lab=b0}
-N 1290 -515 1290 -445 {lab=b1}
-N 1270 -515 1270 -425 {lab=b2}
-N 1250 -515 1250 -405 {lab=b3}
-N 1310 -325 1310 -275 {lab=b7}
-N 1290 -345 1290 -275 {lab=b6}
-N 1270 -365 1270 -275 {lab=b5}
-N 1250 -385 1250 -275 {lab=b4}
-N 1240 -465 1320 -465 {lab=b0}
-N 1240 -445 1320 -445 {lab=b1}
-N 1240 -425 1320 -425 {lab=b2}
-N 1240 -405 1320 -405 {lab=b3}
-N 1240 -385 1320 -385 {lab=b4}
-N 1240 -365 1320 -365 {lab=b5}
-N 1240 -345 1320 -345 {lab=b6}
-N 1240 -325 1320 -325 {lab=b7}
-N 1400 -295 1400 -275 {lab=vss}
-N 1390 -515 1390 -495 {lab=vdd}
-N 1410 -515 1410 -495 {lab=vdd}
-N 1490 -395 1520 -395 {lab=vdac}
-N 1370 -515 1370 -495 {lab=clk_sample_b}
+N 2100 -75 2100 -55 {lab=vss}
+N 2100 -295 2100 -275 {lab=vdd}
+N 2230 -295 2230 -245 {lab=b0}
+N 2210 -295 2210 -225 {lab=b1}
+N 2190 -295 2190 -205 {lab=b2}
+N 2170 -295 2170 -185 {lab=b3}
+N 2230 -105 2230 -55 {lab=b7}
+N 2210 -125 2210 -55 {lab=b6}
+N 2190 -145 2190 -55 {lab=b5}
+N 2170 -165 2170 -55 {lab=b4}
+N 2160 -245 2240 -245 {lab=b0}
+N 2160 -225 2240 -225 {lab=b1}
+N 2160 -205 2240 -205 {lab=b2}
+N 2160 -185 2240 -185 {lab=b3}
+N 2160 -165 2240 -165 {lab=b4}
+N 2160 -145 2240 -145 {lab=b5}
+N 2160 -125 2240 -125 {lab=b6}
+N 2160 -105 2240 -105 {lab=b7}
+N 2320 -75 2320 -55 {lab=vss}
+N 2310 -295 2310 -275 {lab=vdd}
+N 2330 -295 2330 -275 {lab=vdd}
+N 2410 -175 2440 -175 {lab=vdac}
+N 2290 -295 2290 -275 {lab=clk_sample_b}
 N 870 -315 870 -295 {lab=vdd}
 N 870 -155 870 -135 {lab=vss}
 N 780 -245 800 -245 {lab=clk}
@@ -269,6 +269,8 @@ N 940 -215 980 -215 {lab=clk_sample_b}
 N 940 -235 980 -235 {lab=clk_sar_b}
 N 940 -255 980 -255 {lab=clk_sar}
 N 780 -195 800 -195 {lab=reset_n}
+N 2010 -175 2040 -175 {lab=clk_sample_b}
+N 2010 -115 2040 -115 {lab=#net1}
 C {lab_pin.sym} 850 -750 2 1 {name=p6 sig_type=std_logic lab=VIN
 }
 C {lab_pin.sym} 1120 -780 3 1 {name=p7 sig_type=std_logic lab=vsample
@@ -276,7 +278,7 @@ C {lab_pin.sym} 1120 -780 3 1 {name=p7 sig_type=std_logic lab=vsample
 C {lab_pin.sym} 1300 -800 1 0 {name=p10 sig_type=std_logic lab=vdd
 }
 C {vsource.sym} 60 -320 0 0 {name=V1 value=1.8 savecurrent=false}
-C {vsource.sym} 60 -140 0 0 {name=V3 value="SIN(0.9 0.9 10k 0 0)" savecurrent=false}
+C {vsource.sym} 60 -140 0 0 {name=V3 value="PWL(0s 0V 100u 1.8V)" savecurrent=false}
 C {lab_pin.sym} 60 -200 2 1 {name=p18 sig_type=std_logic lab=VIN
 }
 C {vsource.sym} 60 -460 0 0 {name=V4 value="PULSE(0 1.8 0 1n 1n 0.25u 0.5u)" savecurrent=false}
@@ -292,7 +294,7 @@ C {devices/code_shown.sym} 60 -730 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false
 value="
-.param w=2 l=2
+.param w=5 l=5
 .op
 .tran 10n 120u
 .save all
@@ -335,43 +337,37 @@ C {gnd.sym} 140 -260 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} 240 -260 0 0 {name=p51 lab=vss}
 C {lab_pin.sym} 240 -380 0 0 {name=p52 sig_type=std_logic lab=reset_n
 }
-C {xschem/sar_logic/sarlogic.sym} 930 -205 0 0 {name=X4}
-C {lab_pin.sym} 1180 -275 3 0 {name=p24 sig_type=std_logic lab=vss
+C {xschem/sar_logic/sarlogic.sym} 1850 15 0 0 {name=X4}
+C {lab_pin.sym} 2100 -55 3 0 {name=p24 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 1180 -515 3 1 {name=p15 sig_type=std_logic lab=vdd
+C {lab_pin.sym} 2100 -295 3 1 {name=p15 sig_type=std_logic lab=vdd
 }
-C {lab_pin.sym} 1310 -515 3 1 {name=p16 sig_type=std_logic lab=b0
+C {lab_pin.sym} 2230 -295 3 1 {name=p16 sig_type=std_logic lab=b0
 }
-C {lab_pin.sym} 1290 -515 3 1 {name=p17 sig_type=std_logic lab=b1
+C {lab_pin.sym} 2210 -295 3 1 {name=p17 sig_type=std_logic lab=b1
 }
-C {lab_pin.sym} 1270 -515 3 1 {name=p19 sig_type=std_logic lab=b2
+C {lab_pin.sym} 2190 -295 3 1 {name=p19 sig_type=std_logic lab=b2
 }
-C {lab_pin.sym} 1250 -515 3 1 {name=p22 sig_type=std_logic lab=b3
+C {lab_pin.sym} 2170 -295 3 1 {name=p22 sig_type=std_logic lab=b3
 }
-C {lab_pin.sym} 1250 -275 1 1 {name=p25 sig_type=std_logic lab=b4
+C {lab_pin.sym} 2170 -55 1 1 {name=p25 sig_type=std_logic lab=b4
 }
-C {lab_pin.sym} 1270 -275 1 1 {name=p27 sig_type=std_logic lab=b5
+C {lab_pin.sym} 2190 -55 1 1 {name=p27 sig_type=std_logic lab=b5
 }
-C {lab_pin.sym} 1290 -275 1 1 {name=p28 sig_type=std_logic lab=b6
+C {lab_pin.sym} 2210 -55 1 1 {name=p28 sig_type=std_logic lab=b6
 }
-C {lab_pin.sym} 1310 -275 1 1 {name=p30 sig_type=std_logic lab=b7
+C {lab_pin.sym} 2230 -55 1 1 {name=p30 sig_type=std_logic lab=b7
 }
-C {lab_pin.sym} 1090 -395 2 1 {name=p32 sig_type=std_logic lab=clk_sample_b
+C {xschem/dac/dac.sym} 2200 -55 0 0 {name=x25}
+C {lab_pin.sym} 2440 -175 2 0 {name=p33 sig_type=std_logic lab=vdac
 }
-C {xschem/dac/dac.sym} 1280 -275 0 0 {name=x25}
-C {lab_pin.sym} 1520 -395 2 0 {name=p33 sig_type=std_logic lab=vdac
+C {lab_pin.sym} 2320 -55 3 0 {name=p34 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 1400 -275 3 0 {name=p34 sig_type=std_logic lab=vss
+C {lab_pin.sym} 2310 -295 3 1 {name=p36 sig_type=std_logic lab=vdd
 }
-C {lab_pin.sym} 1390 -515 3 1 {name=p36 sig_type=std_logic lab=vdd
+C {lab_pin.sym} 2330 -295 3 1 {name=p39 sig_type=std_logic lab=vdd
 }
-C {lab_pin.sym} 1410 -515 3 1 {name=p39 sig_type=std_logic lab=vdd
-}
-C {lab_pin.sym} 1090 -465 0 0 {name=p41 sig_type=std_logic lab=clk
-}
-C {lab_pin.sym} 1090 -335 0 0 {name=p42 sig_type=std_logic lab=Q
-}
-C {lab_pin.sym} 1370 -515 3 1 {name=p44 sig_type=std_logic lab=clk_sample_b
+C {lab_pin.sym} 2290 -295 3 1 {name=p44 sig_type=std_logic lab=clk_sample_b
 }
 C {xschem/clockgen/clockgen.sym} 760 -135 0 0 {name=X3}
 C {lab_pin.sym} 780 -245 0 0 {name=p45 sig_type=std_logic lab=clk
@@ -395,3 +391,14 @@ C {lab_pin.sym} 780 -195 0 0 {name=p1 sig_type=std_logic lab=reset_n
 C {vsource.sym} 240 -320 0 0 {name=V8 value="PWL(0s 0V 1us 0V 1us 1.8V)" savecurrent=false}
 C {lab_pin.sym} 925 -800 3 1 {name=p4 sig_type=std_logic lab=clk_sample_b
 }
+C {lab_pin.sym} 2010 -175 2 1 {name=p65 sig_type=std_logic lab=clk_sample_b
+}
+C {lab_pin.sym} 1850 -115 0 0 {name=p72 sig_type=std_logic lab=Q}
+C {lab_pin.sym} 1720 -245 0 0 {name=p29 sig_type=std_logic lab=clk
+}
+C {sky130_stdcells/inv_1.sym} 1890 -115 0 0 {name=x28 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 1760 -245 0 0 {name=x36 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_4.sym} 1970 -115 0 0 {name=x38 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_4.sym} 1840 -245 0 0 {name=x33 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_8.sym} 1920 -245 0 0 {name=x34 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_16.sym} 2000 -245 0 0 {name=x37 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }

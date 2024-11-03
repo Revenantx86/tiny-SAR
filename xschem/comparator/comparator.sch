@@ -104,14 +104,14 @@ C {lab_pin.sym} 690 -265 0 1 {name=p5 sig_type=std_logic lab=q_comp
 C {lab_pin.sym} 690 -225 0 1 {name=p29 sig_type=std_logic lab=q_b_comp
 }
 C {sky130_fd_pr/nfet_01v8.sym} 960 -250 0 0 {name=M5
-L=0.5
-W=1
+L=0.15
+W=0.5
 mult=1 nf=1
 model=nfet_01v8
 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 1160 -250 0 1 {name=M1
-L=0.5
-W=1
+L=0.15
+W=0.5
 mult=1 nf=1
 model=nfet_01v8
 spiceprefix=X}

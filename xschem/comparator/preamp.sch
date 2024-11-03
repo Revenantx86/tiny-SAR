@@ -43,8 +43,6 @@ N 465 -180 465 -170 {
 lab=#net1}
 N 465 -180 565 -180 {
 lab=#net1}
-N 405 -450 435 -450 {
-lab=CK}
 N 285 -280 325 -280 {
 lab=VP}
 N 305 -550 345 -550 {
@@ -53,14 +51,10 @@ N 605 -280 645 -280 {
 lab=VN}
 N 365 -180 465 -180 {
 lab=#net1}
-N 435 -450 525 -450 {
-lab=CK}
 N 365 -550 565 -550 {
 lab=VDD}
 N 535 -370 565 -370 {
 lab=VOP}
-N 365 -370 395 -370 {
-lab=VON}
 N 365 -420 365 -310 {
 lab=VON}
 N 565 -420 565 -310 {
@@ -79,23 +73,27 @@ N 145 -390 175 -390 {
 lab=VP}
 N 145 -370 175 -370 {
 lab=VN}
-N 470 -485 470 -450 {
-lab=CK}
 N 365 -130 425 -130 {lab=CK}
 N 560 -450 565 -450 {lab=VDD}
 N 365 -450 370 -450 {lab=VDD}
 N 360 -280 365 -280 {lab=GND}
 N 565 -280 570 -280 {lab=GND}
 N 460 -130 465 -130 {lab=GND}
+N 400 -450 440 -450 {lab=VON}
+N 440 -450 440 -370 {lab=VON}
+N 365 -370 440 -370 {lab=VON}
+N 485 -450 525 -450 {lab=VOP}
+N 485 -450 485 -370 {lab=VOP}
+N 485 -370 535 -370 {lab=VOP}
 C {sky130_fd_pr/nfet_01v8.sym} 345 -280 0 0 {name=M5
 L=1.5
-W=2.5
+W=2
 mult=1 nf=2
 model=nfet_01v8
 spiceprefix=X}
 C {sky130_fd_pr/pfet_01v8.sym} 385 -450 0 1 {name=M6
 W=4
-L=0.5
+L=1.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -109,7 +107,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8.sym} 545 -450 0 0 {name=M7
 W=4
-L=0.5
+L=1.5
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
@@ -123,18 +121,16 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8.sym} 585 -280 0 1 {name=M8
 L=1.5
-W=2.5
+W=2
 mult=1 nf=2
 model=nfet_01v8
 spiceprefix=X}
 C {sky130_fd_pr/nfet_01v8.sym} 445 -130 0 0 {name=M9
-L=2
+L=1
 W=4
 mult=1 nf=1
 model=nfet_01v8
 spiceprefix=X}
-C {lab_pin.sym} 470 -485 1 0 {name=p35 sig_type=std_logic lab=CK
-}
 C {lab_pin.sym} 285 -280 2 1 {name=p28 sig_type=std_logic lab=VP
 }
 C {lab_pin.sym} 645 -280 2 0 {name=p29 sig_type=std_logic lab=VN
@@ -147,9 +143,9 @@ C {lab_pin.sym} 385 -280 2 0 {name=p32 sig_type=std_logic lab=GND
 }
 C {lab_pin.sym} 485 -130 2 0 {name=p33 sig_type=std_logic lab=GND
 }
-C {lab_pin.sym} 395 -370 2 0 {name=p1 sig_type=std_logic lab=VON
+C {lab_pin.sym} 440 -370 3 0 {name=p1 sig_type=std_logic lab=VON
 }
-C {lab_pin.sym} 535 -370 0 0 {name=p2 sig_type=std_logic lab=VOP
+C {lab_pin.sym} 485 -370 3 0 {name=p2 sig_type=std_logic lab=VOP
 }
 C {lab_pin.sym} 175 -530 2 0 {name=p3 sig_type=std_logic lab=VDD
 }

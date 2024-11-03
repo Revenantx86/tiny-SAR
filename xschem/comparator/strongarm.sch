@@ -180,9 +180,9 @@ C {lab_pin.sym} 280 -540 0 1 {name=p4 sig_type=std_logic lab=VDD
 C {lab_pin.sym} 140 -540 0 1 {name=p5 sig_type=std_logic lab=VDD
 }
 C {sky130_fd_pr/nfet_01v8.sym} 420 -255 0 0 {name=M8
-W=10
+W=2.5
 L=0.15
-nf=1 
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -271,9 +271,9 @@ C {lab_pin.sym} 780 -540 0 0 {name=p13 sig_type=std_logic lab=VDD
 C {lab_pin.sym} 920 -540 0 0 {name=p17 sig_type=std_logic lab=VDD
 }
 C {sky130_fd_pr/nfet_01v8.sym} 640 -255 0 1 {name=M13
-W=10
+W=2.5
 L=0.15
-nf=1 
+nf=4 
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
