@@ -21,19 +21,19 @@ N 60 -110 100 -110 {
 lab=q_b}
 N 60 -280 100 -280 {
 lab=clk_b}
-N 335 -195 335 -170 {
+N 315 -30 315 -5 {
 lab=vss}
-N 335 -320 335 -295 {
+N 315 -175 315 -150 {
 lab=vdd}
 N 505 -320 505 -295 {
 lab=vdd}
 N 505 -195 505 -170 {
 lab=vss}
-N 245 -265 285 -265 {
+N 195 -120 235 -120 {
 lab=vp}
-N 245 -225 285 -225 {
+N 195 -60 235 -60 {
 lab=vn}
-N 265 -245 285 -245 {
+N 215 -90 235 -90 {
 lab=clk}
 N 435 -245 455 -245 {
 lab=clk_b}
@@ -56,6 +56,13 @@ N 980 -370 1020 -370 {lab=q_b}
 N 980 -370 980 -320 {lab=q_b}
 N 385 -265 455 -265 {lab=#net3}
 N 385 -225 455 -225 {lab=#net4}
+N 370 -70 380 -70 {lab=#net3}
+N 380 -70 395 -70 {lab=#net3}
+N 395 -70 400 -70 {lab=#net3}
+N 370 -265 385 -265 {lab=#net3}
+N 400 -265 400 -70 {lab=#net3}
+N 370 -225 370 -110 {lab=#net4}
+N 370 -225 385 -225 {lab=#net4}
 C {ipin.sym} 60 -210 0 0 {name=p25 lab=vp}
 C {ipin.sym} 60 -235 2 1 {name=p8 lab=vn}
 C {iopin.sym} 60 -380 2 0 {name=p2 lab=vdd}
@@ -81,17 +88,16 @@ C {opin.sym} 60 -110 2 0 {name=p19 lab=q_b}
 C {ipin.sym} 60 -280 0 0 {name=p28 lab=clk_b}
 C {lab_pin.sym} 100 -280 0 1 {name=p7 sig_type=std_logic lab=clk_b
 }
-C {lab_pin.sym} 335 -170 2 1 {name=p16 sig_type=std_logic lab=vss
+C {lab_pin.sym} 315 -5 2 1 {name=p16 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 335 -320 2 1 {name=p3 sig_type=std_logic lab=vdd
+C {lab_pin.sym} 315 -175 2 1 {name=p3 sig_type=std_logic lab=vdd
 }
-C {lab_pin.sym} 245 -225 1 1 {name=p22 sig_type=std_logic lab=vn
+C {lab_pin.sym} 195 -60 1 1 {name=p22 sig_type=std_logic lab=vn
 }
-C {lab_pin.sym} 245 -265 3 1 {name=p23 sig_type=std_logic lab=vp
+C {lab_pin.sym} 195 -120 3 1 {name=p23 sig_type=std_logic lab=vp
 }
-C {xschem/comparator/preamp.sym} 337.5 -250 0 0 {name=X4}
 C {xschem/comparator/strongarm.sym} 505 -245 0 0 {name=X6}
-C {lab_pin.sym} 265 -245 2 1 {name=p24 sig_type=std_logic lab=clk
+C {lab_pin.sym} 215 -90 2 1 {name=p24 sig_type=std_logic lab=clk
 }
 C {lab_pin.sym} 435 -245 2 1 {name=p1 sig_type=std_logic lab=clk_b
 }
@@ -132,3 +138,4 @@ C {lab_pin.sym} 980 -250 0 1 {name=p38 sig_type=std_logic lab=vss
 }
 C {sky130_stdcells/inv_1.sym} 650 -265 0 0 {name=x1 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_1.sym} 650 -225 0 0 {name=x2 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {xschem/preamp/ota_5t.sym} 235 -90 0 0 {name=X3}

@@ -17,8 +17,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00012
+x1=-1.2e-05
+x2=0.000108
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -40,8 +40,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00012
+x1=-1.2e-05
+x2=0.000108
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -64,8 +64,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00012
+x1=-1.2e-05
+x2=0.000108
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -93,8 +93,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00012
+x1=-1.2e-05
+x2=0.000108
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -118,8 +118,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00012
+x1=-1.2e-05
+x2=0.000108
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -142,8 +142,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00012
+x1=-1.2e-05
+x2=0.000108
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -170,8 +170,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.00012
+x1=-1.2e-05
+x2=0.000108
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -312,8 +312,6 @@ C {xschem/sample/sample_hold.sym} 940 -750 0 0 {name=X1}
 C {lab_pin.sym} 925 -700 1 1 {name=p5 sig_type=std_logic lab=clk_sample}
 C {lab_pin.sym} 1220 -730 2 1 {name=p9 sig_type=std_logic lab=clk_sar_b
 }
-C {lab_pin.sym} 1220 -710 2 1 {name=p11 sig_type=std_logic lab=clk_sar
-}
 C {lab_pin.sym} 60 -80 0 0 {name=p12 sig_type=std_logic lab=vss
 }
 C {devices/code.sym} 50 -895 0 0 {name=TT_MODELS1
@@ -402,3 +400,5 @@ C {sky130_stdcells/inv_4.sym} 1970 -115 0 0 {name=x38 VGND=vss VNB=vss VPB=vdd V
 C {sky130_stdcells/inv_4.sym} 1840 -245 0 0 {name=x33 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_8.sym} 1920 -245 0 0 {name=x34 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_16.sym} 2000 -245 0 0 {name=x37 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {lab_pin.sym} 1220 -710 2 1 {name=p11 sig_type=std_logic lab=clk_sar
+}
