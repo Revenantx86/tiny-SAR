@@ -273,7 +273,7 @@ C {lab_pin.sym} 920 -540 0 0 {name=p17 sig_type=std_logic lab=VDD
 C {sky130_fd_pr/nfet_01v8.sym} 640 -255 0 1 {name=M13
 W=2.5
 L=0.15
-nf=4 
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
