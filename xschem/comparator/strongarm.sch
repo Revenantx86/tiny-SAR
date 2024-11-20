@@ -222,20 +222,6 @@ C {opin.sym} 460 -440 2 1 {name=p23 lab=VON
 C {ipin.sym} 690 -255 0 1 {name=p8 lab=VN}
 C {iopin.sym} 70 -610 2 0 {name=p1 lab=VDD}
 C {ipin.sym} 55 -540 0 0 {name=p6 lab=CK}
-C {sky130_fd_pr/pfet_01v8.sym} 460 -540 0 1 {name=M10
-W=2.5
-L=0.15
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {lab_pin.sym} 440 -540 2 1 {name=p7 sig_type=std_logic lab=VDD
 }
 C {sky130_fd_pr/pfet_01v8.sym} 800 -540 0 1 {name=M11
@@ -317,4 +303,18 @@ model=pfet_01v8
 spiceprefix=X
 }
 C {lab_pin.sym} 620 -540 2 0 {name=p22 sig_type=std_logic lab=VDD
+}
+C {sky130_fd_pr/pfet_01v8.sym} 460 -540 0 1 {name=M10
+W=2.5
+L=0.15
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
 }
