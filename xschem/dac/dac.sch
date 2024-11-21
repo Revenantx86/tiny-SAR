@@ -101,20 +101,16 @@ N 1815 -920 1815 -900 {lab=vss}
 N 1815 -840 1815 -805 {lab=#net1}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1455 -695 0 0 {name=C2 model=cap_mim_m3_1 W=w L=l MF=8 spiceprefix=X}
 C {lab_pin.sym} 615 -805 0 0 {name=p19 sig_type=std_logic lab=vdac}
-C {xschem/dac/dac_sw.sym} 1365 -405 0 0 {name=X2}
 C {lab_pin.sym} 1375 -575 0 0 {name=p1 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1465 -465 1 1 {name=p6 sig_type=std_logic lab=vref
 }
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1635 -695 0 0 {name=C1 model=cap_mim_m3_1 W=w L=l MF=4 spiceprefix=X}
-C {xschem/dac/dac_sw.sym} 1545 -405 0 0 {name=X3}
 C {lab_pin.sym} 1555 -575 0 0 {name=p7 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1645 -465 1 1 {name=p12 sig_type=std_logic lab=vref
 }
-C {xschem/dac/dac_sw.sym} 1725 -405 0 0 {name=X4}
 C {lab_pin.sym} 1735 -575 0 0 {name=p13 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1825 -465 1 1 {name=p18 sig_type=std_logic lab=vref
 }
-C {xschem/dac/dac_sw.sym} 1905 -405 0 0 {name=X5}
 C {lab_pin.sym} 1915 -575 0 0 {name=p20 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 2005 -465 1 1 {name=p50 sig_type=std_logic lab=vref
 }
@@ -122,19 +118,15 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 1815 -695 0 0 {name=C3 model=cap_mim_m3_1 W=w 
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1995 -695 0 0 {name=C4 model=cap_mim_m3_1 W=w L=l MF=1 spiceprefix=X}
 C {lab_pin.sym} 2185 -805 3 0 {name=p53 sig_type=std_logic lab=vss}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 2085 -805 1 0 {name=C5 model=cap_mim_m3_1 W=w L=l MF=1 spiceprefix=X}
-C {xschem/dac/dac_sw.sym} 1185 -405 0 0 {name=X1}
 C {lab_pin.sym} 1195 -575 0 0 {name=p44 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1285 -465 1 1 {name=p54 sig_type=std_logic lab=vref
 }
-C {xschem/dac/dac_sw.sym} 1005 -405 0 0 {name=X6}
 C {lab_pin.sym} 1015 -575 0 0 {name=p55 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 1105 -465 1 1 {name=p60 sig_type=std_logic lab=vref
 }
-C {xschem/dac/dac_sw.sym} 825 -405 0 0 {name=X7}
 C {lab_pin.sym} 835 -575 0 0 {name=p61 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 925 -465 1 1 {name=p66 sig_type=std_logic lab=vref
 }
-C {xschem/dac/dac_sw.sym} 645 -405 0 0 {name=X8}
 C {lab_pin.sym} 655 -575 0 0 {name=p67 sig_type=std_logic lab=vdd}
 C {lab_pin.sym} 655 -555 0 0 {name=p68 sig_type=std_logic lab=vss}
 C {lab_pin.sym} 645 -380 3 0 {name=p69 sig_type=std_logic lab=s7}
@@ -255,3 +247,11 @@ C {sky130_fd_pr/cap_mim_m3_1.sym} 735 -695 0 0 {name=C6 model=cap_mim_m3_1 W=w L
 C {sky130_fd_pr/cap_mim_m3_1.sym} 915 -695 0 0 {name=C7 model=cap_mim_m3_1 W=w L=l MF=4 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1095 -695 0 0 {name=C8 model=cap_mim_m3_1 W=w L=l MF=2 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_1.sym} 1275 -695 0 0 {name=C9 model=cap_mim_m3_1 W=w L=l MF=1 spiceprefix=X}
+C {dac/dac_sw.sym} 645 -405 0 0 {name=X1}
+C {dac/dac_sw.sym} 825 -405 0 0 {name=X2}
+C {dac/dac_sw.sym} 1005 -405 0 0 {name=X3}
+C {dac/dac_sw.sym} 1185 -405 0 0 {name=X4}
+C {dac/dac_sw.sym} 1365 -405 0 0 {name=X5}
+C {dac/dac_sw.sym} 1545 -405 0 0 {name=X6}
+C {dac/dac_sw.sym} 1725 -405 0 0 {name=X7}
+C {dac/dac_sw.sym} 1905 -405 0 0 {name=X8}
