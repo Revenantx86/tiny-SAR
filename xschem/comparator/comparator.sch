@@ -35,19 +35,6 @@ N 160 -480 200 -480 {
 lab=q_b}
 N 160 -740 200 -740 {
 lab=clk_b}
-N 2950 -230 2950 -200 {lab=vss}
-N 2950 -200 3110 -200 {lab=vss}
-N 3110 -230 3110 -200 {lab=vss}
-N 2880 -260 2910 -260 {lab=q_comp}
-N 3150 -260 3180 -260 {lab=q_b_comp}
-N 3110 -330 3110 -290 {lab=q}
-N 2950 -330 2950 -290 {lab=q_b}
-N 2950 -330 2990 -330 {lab=q_b}
-N 3070 -330 3110 -330 {lab=q}
-N 3110 -380 3110 -330 {lab=q}
-N 3070 -380 3110 -380 {lab=q}
-N 2950 -380 2990 -380 {lab=q_b}
-N 2950 -380 2950 -330 {lab=q_b}
 N 950 -770 950 -740 {lab=#net1}
 N 800 -740 950 -740 {lab=#net1}
 N 800 -770 800 -740 {lab=#net1}
@@ -340,12 +327,28 @@ N 560 -590 970 -590 {lab=#net2}
 N 2320 -200 2330 -200 {lab=vss}
 N 2330 -200 2330 -120 {lab=vss}
 N 2320 -120 2330 -120 {lab=vss}
-N 2950 -260 2960 -260 {lab=vss}
-N 2960 -260 2960 -200 {lab=vss}
-N 3100 -260 3110 -260 {lab=vss}
-N 3100 -260 3100 -200 {lab=vss}
-N 3110 -355 3160 -355 {lab=q}
-N 2900 -355 2950 -355 {lab=q_b}
+N 2870 -310 2870 -260 {lab=q_b}
+N 2870 -200 2870 -170 {lab=vss}
+N 2790 -230 2830 -230 {lab=q_comp}
+N 2940 -280 2940 -250 {lab=vss}
+N 2870 -310 2900 -310 {lab=q_b}
+N 2870 -430 2900 -430 {lab=q_b}
+N 2940 -490 2940 -460 {lab=vdd}
+N 3170 -310 3170 -260 {lab=q}
+N 3170 -200 3170 -170 {lab=vss}
+N 3210 -230 3250 -230 {lab=q_b_comp}
+N 3100 -280 3100 -250 {lab=vss}
+N 3140 -310 3170 -310 {lab=q}
+N 3140 -430 3170 -430 {lab=q}
+N 3100 -490 3100 -460 {lab=vdd}
+N 2870 -430 2870 -310 {lab=q_b}
+N 3170 -430 3170 -310 {lab=q}
+N 3100 -400 3100 -340 {lab=q_b}
+N 2940 -400 2940 -340 {lab=q}
+N 2940 -360 3170 -360 {lab=q}
+N 2870 -380 3100 -380 {lab=q_b}
+N 3170 -360 3260 -360 {lab=q}
+N 2780 -380 2870 -380 {lab=q_b}
 C {ipin.sym} 160 -650 0 0 {name=p25 lab=vp}
 C {ipin.sym} 160 -675 2 1 {name=p8 lab=vn}
 C {iopin.sym} 160 -860 2 0 {name=p2 lab=vdd}
@@ -366,29 +369,6 @@ C {opin.sym} 160 -505 2 0 {name=p18 lab=q}
 C {opin.sym} 160 -480 2 0 {name=p19 lab=q_b}
 C {ipin.sym} 160 -740 0 0 {name=p28 lab=clk_b}
 C {lab_pin.sym} 200 -740 0 1 {name=p7 sig_type=std_logic lab=clk_b
-}
-C {sky130_fd_pr/nfet_01v8.sym} 2930 -260 0 0 {name=M5
-L=0.15
-W=0.5
-mult=1 nf=1
-model=nfet_01v8
-spiceprefix=X}
-C {sky130_fd_pr/nfet_01v8.sym} 3130 -260 0 1 {name=M1
-L=0.15
-W=0.5
-mult=1 nf=1
-model=nfet_01v8
-spiceprefix=X}
-C {lab_pin.sym} 3180 -260 0 1 {name=p32 sig_type=std_logic lab=q_b_comp
-}
-C {lab_pin.sym} 2880 -260 2 1 {name=p33 sig_type=std_logic lab=q_comp}
-C {sky130_stdcells/inv_1.sym} 3030 -380 0 0 {name=x5 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 3030 -330 2 0 {name=x7 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
-C {lab_pin.sym} 3160 -355 0 1 {name=p30 sig_type=std_logic lab=q
-}
-C {lab_pin.sym} 2900 -355 2 1 {name=p31 sig_type=std_logic lab=q_b
-}
-C {lab_pin.sym} 3030 -200 1 1 {name=p35 sig_type=std_logic lab=vss
 }
 C {sky130_fd_pr/pfet_01v8.sym} 970 -800 0 1 {name=M6
 W=1
@@ -645,7 +625,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 2210 -355 0 0 {name=M24
 W=2.5
 L=0.15
-nf=1
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -659,7 +639,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 2250 -610 0 1 {name=M25
 W=2.5
 L=0.15
-nf=1
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -705,7 +685,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 2430 -355 0 1 {name=M28
 W=2.5
 L=0.15
-nf=1
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -719,7 +699,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8.sym} 2390 -610 0 0 {name=M29
 W=2.5
 L=0.15
-nf=1 
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W/nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
@@ -845,3 +825,93 @@ C {lab_pin.sym} 740 -640 1 1 {name=p15 sig_type=std_logic lab=vss
 C {lab_pin.sym} 690 -710 3 1 {name=p16 sig_type=std_logic lab=vss
 }
 C {title.sym} 200 -50 0 0 {name=l1 author="Refik Yalcin"}
+C {sky130_fd_pr/nfet_01v8.sym} 2920 -310 0 0 {name=M35
+L=0.15
+W=0.45
+mult=1 nf=1
+model=nfet_01v8
+spiceprefix=X}
+C {sky130_fd_pr/pfet_01v8.sym} 2920 -430 0 0 {name=M36
+W=0.9
+L=0.15
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 2940 -430 2 0 {name=p3 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 2940 -310 2 0 {name=p6 sig_type=std_logic lab=vss
+
+}
+C {sky130_fd_pr/nfet_01v8.sym} 2850 -230 0 0 {name=M37
+L=0.15
+W=0.5
+mult=1 nf=1
+model=nfet_01v8
+spiceprefix=X}
+C {lab_pin.sym} 2870 -230 2 0 {name=p10 sig_type=std_logic lab=vss
+
+}
+C {lab_pin.sym} 2870 -170 2 0 {name=p26 sig_type=std_logic lab=vss
+
+}
+C {lab_pin.sym} 2790 -230 2 1 {name=p27 sig_type=std_logic lab=q_comp}
+C {lab_pin.sym} 2940 -250 2 0 {name=p29 sig_type=std_logic lab=vss
+
+}
+C {lab_pin.sym} 2940 -490 2 0 {name=p36 sig_type=std_logic lab=vdd
+}
+C {sky130_fd_pr/nfet_01v8.sym} 3120 -310 0 1 {name=M38
+L=0.15
+W=0.45
+mult=1 nf=1
+model=nfet_01v8
+spiceprefix=X}
+C {sky130_fd_pr/pfet_01v8.sym} 3120 -430 0 1 {name=M39
+W=0.9
+L=0.15
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8
+spiceprefix=X
+}
+C {lab_pin.sym} 3100 -430 2 1 {name=p38 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 3100 -310 2 1 {name=p42 sig_type=std_logic lab=vss
+
+}
+C {sky130_fd_pr/nfet_01v8.sym} 3190 -230 0 1 {name=M40
+L=0.15
+W=0.5
+mult=1 nf=1
+model=nfet_01v8
+spiceprefix=X}
+C {lab_pin.sym} 3170 -230 2 1 {name=p49 sig_type=std_logic lab=vss
+
+}
+C {lab_pin.sym} 3170 -170 2 1 {name=p72 sig_type=std_logic lab=vss
+
+}
+C {lab_pin.sym} 3250 -230 2 0 {name=p73 sig_type=std_logic lab=q_b_comp}
+C {lab_pin.sym} 3100 -250 2 1 {name=p74 sig_type=std_logic lab=vss
+
+}
+C {lab_pin.sym} 3100 -490 2 1 {name=p75 sig_type=std_logic lab=vdd
+}
+C {lab_pin.sym} 3260 -360 0 1 {name=p76 sig_type=std_logic lab=q
+}
+C {lab_pin.sym} 2780 -380 2 1 {name=p77 sig_type=std_logic lab=q_b
+}

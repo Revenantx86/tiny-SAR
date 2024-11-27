@@ -131,7 +131,7 @@ color="4 6"
 node="clk_sar
 q_b"}
 B 2 875 -1837.5 1675 -1437.5 {flags=graph
-y1=-0.62
+y1=-0.67
 y2=2
 ypos1=0
 ypos2=2
@@ -154,10 +154,8 @@ logy=0
 
 
 
-color="4 6 5"
-node="vsample
-vdac
-Q"}
+color=4
+node=VIN}
 B 2 875 -1417.5 1675 -1017.5 {flags=graph
 y1=-0.071
 y2=2
@@ -320,7 +318,7 @@ value="
 "}
 C {launcher.sym} 110 -972.5 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/adc_top.raw tran"
+tclcommand="xschem raw_read $netlist_dir/adc_top_tb.raw tran"
 }
 C {lab_pin.sym} 60 -80 0 0 {name=p12 sig_type=std_logic lab=vss
 }

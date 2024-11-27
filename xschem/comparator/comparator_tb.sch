@@ -209,19 +209,19 @@ N 360 -360 360 -330 {
 lab=vb0}
 N 360 -270 360 -240 {
 lab=vss}
-N 2795 -1070 2795 -1040 {lab=vss}
-N 2795 -1040 2955 -1040 {lab=vss}
-N 2955 -1070 2955 -1040 {lab=vss}
-N 2725 -1100 2755 -1100 {lab=q_comp}
-N 2995 -1100 3025 -1100 {lab=q_b_comp}
-N 2955 -1170 2955 -1130 {lab=q}
-N 2795 -1170 2795 -1130 {lab=q_b}
-N 2795 -1170 2835 -1170 {lab=q_b}
-N 2915 -1170 2955 -1170 {lab=q}
-N 2955 -1220 2955 -1170 {lab=q}
-N 2915 -1220 2955 -1220 {lab=q}
-N 2795 -1220 2835 -1220 {lab=q_b}
-N 2795 -1220 2795 -1170 {lab=q_b}
+N 2995 -420 2995 -390 {lab=vss}
+N 2995 -390 3155 -390 {lab=vss}
+N 3155 -420 3155 -390 {lab=vss}
+N 2925 -450 2955 -450 {lab=q_comp}
+N 3195 -450 3225 -450 {lab=q_b_comp}
+N 3155 -520 3155 -480 {lab=q}
+N 2995 -520 2995 -480 {lab=q_b}
+N 2995 -520 3035 -520 {lab=q_b}
+N 3115 -520 3155 -520 {lab=q}
+N 3155 -570 3155 -520 {lab=q}
+N 3115 -570 3155 -570 {lab=q}
+N 2995 -570 3035 -570 {lab=q_b}
+N 2995 -570 2995 -520 {lab=q_b}
 N 1670 -650 1670 -620 {lab=vop}
 N 1520 -620 1670 -620 {lab=vop}
 N 1520 -650 1520 -620 {lab=vop}
@@ -614,32 +614,32 @@ C {lab_pin.sym} 2070 -540 0 0 {name=p29 sig_type=std_logic lab=q_b_comp
 }
 C {sky130_stdcells/inv_1.sym} 2550 -540 0 0 {name=x1 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
 C {sky130_stdcells/inv_1.sym} 2110 -540 0 1 {name=x2 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
-C {sky130_fd_pr/nfet_01v8.sym} 2775 -1100 0 0 {name=M5
+C {sky130_fd_pr/nfet_01v8.sym} 2975 -450 0 0 {name=M5
 L=0.15
 W=0.5
 mult=1 nf=1
 model=nfet_01v8
 spiceprefix=X}
-C {sky130_fd_pr/nfet_01v8.sym} 2975 -1100 0 1 {name=M1
+C {sky130_fd_pr/nfet_01v8.sym} 3175 -450 0 1 {name=M1
 L=0.15
 W=0.5
 mult=1 nf=1
 model=nfet_01v8
 spiceprefix=X}
-C {lab_pin.sym} 3025 -1100 0 1 {name=p32 sig_type=std_logic lab=q_b_comp
+C {lab_pin.sym} 3225 -450 0 1 {name=p32 sig_type=std_logic lab=q_b_comp
 }
-C {lab_pin.sym} 2725 -1100 2 1 {name=p33 sig_type=std_logic lab=q_comp}
-C {sky130_stdcells/inv_1.sym} 2875 -1220 0 0 {name=x5 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
-C {sky130_stdcells/inv_1.sym} 2875 -1170 2 0 {name=x7 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
-C {lab_pin.sym} 2955 -1195 0 1 {name=p30 sig_type=std_logic lab=q
+C {lab_pin.sym} 2925 -450 2 1 {name=p33 sig_type=std_logic lab=q_comp}
+C {sky130_stdcells/inv_1.sym} 3075 -570 0 0 {name=x5 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {sky130_stdcells/inv_1.sym} 3075 -520 2 0 {name=x7 VGND=vss VNB=vss VPB=vdd VPWR=vdd prefix=sky130_fd_sc_hd__ }
+C {lab_pin.sym} 3155 -545 0 1 {name=p30 sig_type=std_logic lab=q
 }
-C {lab_pin.sym} 2795 -1185 2 1 {name=p31 sig_type=std_logic lab=q_b
+C {lab_pin.sym} 2995 -535 2 1 {name=p31 sig_type=std_logic lab=q_b
 }
-C {lab_pin.sym} 2875 -1040 1 1 {name=p35 sig_type=std_logic lab=vss
+C {lab_pin.sym} 3075 -390 1 1 {name=p35 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 2955 -1100 2 1 {name=p36 sig_type=std_logic lab=vss
+C {lab_pin.sym} 3155 -450 2 1 {name=p36 sig_type=std_logic lab=vss
 }
-C {lab_pin.sym} 2795 -1100 0 1 {name=p38 sig_type=std_logic lab=vss
+C {lab_pin.sym} 2995 -450 0 1 {name=p38 sig_type=std_logic lab=vss
 }
 C {sky130_fd_pr/pfet_01v8.sym} 1690 -680 0 1 {name=M2
 W=1
